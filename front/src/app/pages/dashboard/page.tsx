@@ -16,7 +16,7 @@ interface FeatureProps {
   description: string;
 }
 
-export function Dashboard() {
+export default function Dashboard() {
   return (
     <div className="flex flex-col">
       {/* Carousel al inicio */}

@@ -9,7 +9,7 @@ interface CategoryProps {
   name: string;
 }
 
-export function ServicesSection() {
+export default function ServicesSection() {
   const [activeCategory, setActiveCategory] = useState<string>("todos");
 
   const categories: CategoryProps[] = [
