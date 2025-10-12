@@ -2,7 +2,7 @@
 import React from "react";
 import { EmojiEvents, Person, WatchLater } from "@mui/icons-material";
 
-export function AboutSection() {
+export default function AboutSection() {
   return (
     <div className="pt-24 pb-16">
       <div className="container mx-auto px-6">
