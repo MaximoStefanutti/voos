@@ -2,7 +2,7 @@
 
 import { WhatsApp } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
-import { animate } from "animejs";
+import { anime } from "animejs";
 import { useEffect, useRef } from "react";
 
 interface WhatsAppBotProps {
@@ -22,7 +22,7 @@ export function WhatsAppBot({
 
   useEffect(() => {
     if (buttonRef.current) {
-      animate({
+      anime({
         targets: buttonRef.current,
         translateY: [50, 0], // desde abajo hacia arriba
         opacity: [0, 1],
