@@ -2,7 +2,7 @@
 
 import { WhatsApp } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
-import { anime } from "animejs";
+// import { anime } from "animejs";
 import { useEffect, useRef } from "react";
 
 interface WhatsAppBotProps {
@@ -20,17 +20,17 @@ export function WhatsAppBot({
     message
   )}`;
 
-  useEffect(() => {
-    if (buttonRef.current) {
-      anime({
-        targets: buttonRef.current,
-        translateY: [50, 0], // desde abajo hacia arriba
-        opacity: [0, 1],
-        easing: "easeOutElastic(1, .8)",
-        duration: 1000,
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (buttonRef.current) {
+  //     anime({
+  //       targets: buttonRef.current,
+  //       translateY: [50, 0], // desde abajo hacia arriba
+  //       opacity: [0, 1],
+  //       easing: "easeOutElastic(1, .8)",
+  //       duration: 1000,
+  //     });
+  //   }
+  // }, []);
 
   return (
     <IconButton
