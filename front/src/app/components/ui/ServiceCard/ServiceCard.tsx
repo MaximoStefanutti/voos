@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { WhatsAppBot } from "../WhatsApp/WhatsAppBot";
 
 interface ServiceProps {
   id?: number;
@@ -35,17 +36,8 @@ export function ServiceCard({
       <div className="p-6">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl text-white">{name}</h3>
-          <div className="bg-[#0a3635]/30 text-[#f0d4a8] px-3 py-1 rounded-full text-sm">
-            ${price}
-          </div>
         </div>
         <p className="text-gray-300 text-sm mb-3">{description}</p>
-        <div className="flex justify-between items-center text-sm">
-          <span className="text-gray-400">{duration} min</span>
-          <button className="text-[#f0d4a8] hover:underline">
-            Ver detalles
-          </button>
-        </div>
       </div>
     </div>
   );

@@ -40,15 +40,8 @@ export default function AboutSection() {
           <div className="relative h-80 lg:h-auto">
             <div className="absolute w-3/4 h-3/4 top-0 right-0 rounded-lg overflow-hidden">
               <img
-                src="https://uploadthingy.s3.us-west-1.amazonaws.com/8ssFAZhHfrQn3x42BRn8Af/fondo.png"
-                alt="VOOS Ambiente"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="absolute w-2/3 h-2/3 bottom-0 left-0 rounded-lg overflow-hidden border-4 border-[#0a3635] shadow-xl">
-              <img
-                src="https://uploadthingy.s3.us-west-1.amazonaws.com/wfNhAFUXwHjD3X6ogVgL1W/image.png"
-                alt="VOOS Filosofía"
+                src="fondo.png"
+                alt="VOOS Logo"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -109,6 +102,7 @@ export default function AboutSection() {
             <p className="text-white mb-4">Córdoba, Argentina.</p>
             <p className="text-white mb-2">Tel: (351) 156-xxx-xx</p>
             <p className="text-white">Email: contacto@voos.com</p>
+            <p className="text-white">Instagram: estetica_voos</p>
             <div className="mt-6">
               <button className="px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors">
                 Contáctanos

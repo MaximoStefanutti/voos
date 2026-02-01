@@ -53,7 +53,7 @@ export default function ServicesSection() {
             ))}
           </div>
 
-          <div className="relative w-full md:w-auto">
+          {/* <div className="relative w-full md:w-auto">
             <input
               type="text"
               placeholder="Buscar tratamiento..."
@@ -63,7 +63,7 @@ export default function ServicesSection() {
               sx={{ fontSize: 18, color: "gray" }}
               className="absolute left-3 top-1/2 transform -translate-y-1/2"
             />
-          </div>
+          </div> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

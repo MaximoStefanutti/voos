@@ -17,8 +17,7 @@ export const services: ServiceProps[] = [
     duration: 60,
     price: 65,
     category: "masajes",
-    image:
-      "https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    image: "masajes.png",
   },
   {
     id: 2,
@@ -27,8 +26,7 @@ export const services: ServiceProps[] = [
     duration: 45,
     price: 55,
     category: "facial",
-    image:
-      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    image: "facial.jpg",
   },
 
   {
@@ -38,68 +36,83 @@ export const services: ServiceProps[] = [
     duration: 90,
     price: 45,
     category: "corporal",
-    image:
-      "https://images.unsplash.com/photo-1610992015732-2449b76344bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    image: "manicura.jpg",
   },
   {
     id: 4,
-    name: "Tratamiento Anti-edad",
-    description: "Reduce líneas finas y mejora la elasticidad de la piel.",
+    name: "Depilación Definitiva",
+    description: "Elimina el vello no deseado. Resultados duraderos.",
     duration: 75,
     price: 85,
-    category: "facial",
-    image:
-      "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    category: "depilación",
+    image: "depilación.jpg",
   },
   {
     id: 5,
-    name: "Masaje Terapéutico",
-    description: "Masaje profundo para aliviar dolores musculares crónicos.",
+    name: "HIFU corporal",
+    description:
+      "Reafirma y tensa la piel del abdomen, brazos, glúteos y piernas sin cirugía.",
     duration: 60,
     price: 75,
-    category: "masajes",
-    image:
-      "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    category: "corporal",
+    image: "hifu-corporal.jpg",
   },
   {
     id: 6,
-    name: "Exfoliación Corporal",
+    name: "HIFU",
     description:
-      "Elimina células muertas y revitaliza la piel de todo el cuerpo.",
-    duration: 45,
-    price: 60,
-    category: "corporal",
-    image:
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "Rejuvenece la piel desde capas profundas con un efecto lifting sin cirugía.",
+    duration: 60,
+    price: 75,
+    category: "facial",
+    image: "hifu.jpg",
   },
   {
     id: 7,
-    name: "Limpieza Facial Profunda",
-    description: "Purifica y desintoxica la piel eliminando impurezas.",
-    duration: 60,
-    price: 70,
-    category: "facial",
-    image:
-      "https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    name: "Vela terapia",
+    description: "Reducción de Celulitis y Moldeo Corporal sin Cirugía.",
+    duration: 45,
+    price: 60,
+    category: "corporal",
+    image: "vela.jpg",
   },
   {
     id: 8,
-    name: "Tratamiento Hidratante",
-    description: "Hidratación intensiva para pieles secas y deshidratadas.",
-    duration: 50,
-    price: 65,
+    name: "Readiofrecuencia Fraccionada",
+    description:
+      "Estimula el colágeno, mejora arrugas, textura y firmeza del rostro sin dañar la superficie cutánea.",
+    duration: 60,
+    price: 70,
     category: "facial",
-    image:
-      "https://images.unsplash.com/photo-1598971639058-a4275cc93c9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    image: "radiofrecuencia.jpg",
   },
   {
     id: 9,
-    name: "Masaje de Piedras Calientes",
-    description: "Relaja profundamente los músculos con piedras volcánicas.",
+    name: "Botas de Presoterapia",
+    description:
+      "Drenaje linfático mecánico que mejora la circulación, elimina líquidos y ayuda a combatir la celulitis.",
+    duration: 50,
+    price: 65,
+    category: "corporal",
+    image: "botas.jpg",
+  },
+  {
+    id: 10,
+    name: " Liposonix",
+    description:
+      "Ultrasonido focalizado de alta intensidad para eliminar grasa localizada y definir el contorno corporal.",
     duration: 80,
     price: 90,
-    category: "masajes",
-    image:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    category: "corporal",
+    image: "liposonix.jpg",
+  },
+  {
+    id: 11,
+    name: " Diseño de Cejas y Realce de Pestañas",
+    description: "Diseño y cuidado de cejas y pestañas.",
+    duration: 80,
+    price: 90,
+    category: "facial",
+    image: "cejas.jpg",
   },
 ];

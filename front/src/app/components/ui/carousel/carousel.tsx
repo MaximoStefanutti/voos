@@ -14,20 +14,17 @@ export function Carousel() {
 
   const slides: Slide[] = [
     {
-      image:
-        "https://uploadthingy.s3.us-west-1.amazonaws.com/wfNhAFUXwHjD3X6ogVgL1W/image.png",
+      image: "fondo.png",
       title: "VOOS",
       description: "Tu mejor versión",
     },
     {
-      image:
-        "https://uploadthingy.s3.us-west-1.amazonaws.com/8ssFAZhHfrQn3x42BRn8Af/fondo.png",
+      image: "masajes-con-piedras-calientes.png",
       title: "Bienestar y Armonía",
       description: "Descubre nuestros tratamientos holísticos",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      image: "",
       title: "Promoción Especial",
       description: "20% de descuento en tu primer masaje",
     },
@@ -69,7 +66,7 @@ export function Carousel() {
             </p>
             {index === 2 && (
               <button className="mt-8 px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors">
-                Reservar Ahora
+                <a href="#">Reservar Ahora</a>
               </button>
             )}
           </div>

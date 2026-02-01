@@ -100,7 +100,9 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Map fontSize="small" className="mr-2 text-[#f0d4a8] mt-0.5" />
-                <span className="text-gray-300">Chamical 2610</span>
+                <span className="text-gray-300">
+                  Córdoba, Argentina. B° Empalme, calle Chamical 2610
+                </span>
               </li>
               <li className="flex items-center">
                 <Phone fontSize="small" className="mr-2 text-[#f0d4a8]" />
@@ -109,6 +111,10 @@ export function Footer() {
               <li className="flex items-center">
                 <Email fontSize="small" className="mr-2 text-[#f0d4a8]" />
                 <span className="text-gray-300">contacto@voos.com</span>
+              </li>
+              <li className="flex items-center">
+                <Instagram fontSize="small" className="mr-2 text-[#f0d4a8]" />
+                <span className="text-gray-300">estetica_voos</span>
               </li>
             </ul>
           </div>
