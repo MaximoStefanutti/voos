@@ -1,6 +1,7 @@
 import React from "react";
 import { Favorite, Star, Spa } from "@mui/icons-material";
 import { Carousel } from "@/app/components/ui/carousel/carousel";
+import Link from "next/link";
 
 interface ServiceProps {
   id: number;
@@ -65,9 +66,13 @@ export default function Dashboard() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <button className="px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors">
+            <Link
+              href="/treatment"
+              scroll={true}
+              className="px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors"
+            >
               Ver Todos los Tratamientos
-            </button>
+            </Link>
           </div>
         </div>
       </section>

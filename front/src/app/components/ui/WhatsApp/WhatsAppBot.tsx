@@ -1,46 +1,93 @@
 "use client";
 
-import { WhatsApp } from "@mui/icons-material";
-import { IconButton } from "@mui/material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { env } from "@/app/config/env";
+import { useAppUI } from "@/app/context/AppUIContext";
+import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
+import { useEffect, useState } from "react";
 
-interface WhatsAppBotProps {
-  phone: string; // número con código de pías sin + ni espacios, ej: "5493513513351"
-  message?: string;
-}
+export function WhatsAppBot() {
+  const { splashFinished } = useAppUI();
+  const [visible, setVisible] = useState(false);
 
-export function WhatsAppBot({
-  phone,
-  message = "¡Hola! Me gustaría obtener más información.",
-}: WhatsAppBotProps) {
-  const WhatsappLink = `http://wa.me/${phone}?text=${encodeURIComponent(
-    message
-  )}`;
+  useEffect(() => {
+    if (splashFinished) {
+      const timer = setTimeout(() => setVisible(true), 300);
+      return () => clearTimeout(timer);
+    }
+  }, [splashFinished]);
+
+  if (!splashFinished || !env.whatsappPhone) return null;
+
+  const link = getWhatsAppLink(
+    env.whatsappPhone,
+    "¡Hola! Me gustaría obtener más información.",
+  );
 
   return (
-    <IconButton
-      component="a"
-      href={WhatsappLink}
+    <a
+      href={link}
       target="_blank"
-      rel="nooperner noreferrer"
+      rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
-      sx={{
-        position: "fixed",
-        bottom: 24,
-        right: 24,
-        width: 56,
-        height: 56,
-        backgroundColor: "#25D366",
-        color: "white",
-        boxShadow: "0px 4px 12px rgba(37, 211, 102, 0.5)",
-        zIndex: 9999,
-        "&:hover": {
-          backgroundColor: "#1DA851",
-          transform: "scale(1.1)",
-          transition: "all 0.2s ease",
-        },
-      }}
+      className={`
+        fixed bottom-6 right-6 z-[9999]
+        w-14 h-14 rounded-full
+        flex items-center justify-center
+        bg-[#25D366] text-white
+        shadow-lg
+        transition-all duration-500 ease-out
+        ${
+          visible
+            ? "opacity-100 translate-y-0 scale-100"
+            : "opacity-0 translate-y-6 scale-90"
+        }
+        hover:scale-110 hover:bg-[#1DA851]
+      `}
     >
-      <WhatsApp fontSize="large" />
-    </IconButton>
+      <WhatsAppIcon sx={{ fontSize: 30 }} />
+    </a>
   );
 }
+
+// "use client";
+
+// import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+
+// import { useAppUI } from "@/app/context/AppUIContext";
+// import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
+// import { env } from "@/app/config/env";
+
+// export function WhatsAppBot() {
+//   const { splashFinished } = useAppUI();
+
+//   console.log("WHATSAPP ENV:", env.whatsappPhone);
+
+//   if (!splashFinished || !env.whatsappPhone) return null;
+//   console.log("num", env.whatsappPhone);
+
+//   const link = getWhatsAppLink(
+//     env.whatsappPhone,
+//     "¡Hola! Me gustaría obtener más información.",
+//   );
+
+//   return (
+//     <a
+//       href={link}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       aria-label="Contactar por WhatsApp"
+//       className="
+//         fixed bottom-6 right-6 z-[9999]
+//         w-14 h-14 rounded-full
+//         flex items-center justify-center
+//         bg-[#25D366] text-white
+//         shadow-lg
+//         hover:scale-110 hover:bg-[#1DA851]
+//         transition-transform
+//       "
+//     >
+//       <WhatsAppIcon sx={{ fontSize: 32 }} />
+//     </a>
+//   );
+// }

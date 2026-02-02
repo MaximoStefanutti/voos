@@ -1,59 +1,47 @@
-// NavBar.tsx
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-type Section = "home" | "about" | "service";
+export function NavBar() {
+  const pathname = usePathname();
 
-interface NavbarProps {
-  activeSection: Section;
-  setActiveSection: (section: Section) => void;
-}
+  const linkClass = (path: string) =>
+    pathname === path
+      ? "text~[#f0d4a8]"
+      : "text-white hover:text~[#f0d4a8] transition-colors";
 
-export function NavBar({ activeSection, setActiveSection }: NavbarProps) {
   return (
-    <nav className="fixed top-0 w-full bg-black/50 backdrop-blur-sm z-50">
+    <nav className="fixed top-0 w-full bg-black/ backdrop-blur-sm z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="relative w-44 h-16 cursor-pointer">
+        {/* LOGO */}
+        <Link href="/" className="relative w-44 h-16">
           <Image
-            src="logo.svg"
-            alt="Logo VOOS"
+            src="/logo.svg"
+            alt="Logo VOSS"
             fill
-            style={{ objectFit: "contain" }}
+            className="object-contain"
             priority
           />
-        </div>
+        </Link>
+
+        {/* LINKS */}
         <ul className="flex space-x-6">
           <li>
-            <button
-              onClick={() => setActiveSection("home")}
-              className={`${
-                activeSection === "home" ? "text-[#f0d4a8]" : "text-white"
-              } hover:text-[#f0d4a8] transition-colors`}
-            >
+            <Link href="/" className={linkClass("/")}>
               Inicio
-            </button>
+            </Link>
           </li>
           <li>
-            <button
-              onClick={() => setActiveSection("about")}
-              className={`${
-                activeSection === "about" ? "text-[#f0d4a8]" : "text-white"
-              } hover:text-[#f0d4a8] transition-colors`}
-            >
+            <Link href="/about" className={linkClass("/about")}>
               Nosotros
-            </button>
+            </Link>
           </li>
           <li>
-            <button
-              onClick={() => setActiveSection("service")}
-              className={`${
-                activeSection === "service" ? "text-[#f0d4a8]" : "text-white"
-              } hover:text-[#f0d4a8] transition-colors`}
-            >
+            <Link href="/treatment" className={linkClass("/treatment")}>
               Tratamientos
-            </button>
+            </Link>
           </li>
         </ul>
       </div>

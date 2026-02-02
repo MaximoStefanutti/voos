@@ -1,6 +1,8 @@
 "use client";
-import React from "react";
-import { WhatsAppBot } from "../WhatsApp/WhatsAppBot";
+
+import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
+import { WhatsApp } from "@mui/icons-material";
+import { env } from "@/app/config/env";
 
 interface ServiceProps {
   id?: number;
@@ -12,13 +14,18 @@ interface ServiceProps {
   image: string;
 }
 
-export function ServiceCard({
-  name,
-  description,
-  duration,
-  price,
-  image,
-}: ServiceProps) {
+export function ServiceCard({ name, description, image }: ServiceProps) {
+  const phone = env.whatsappPhone;
+
+  const message = `Hola! 
+  Quiero reservar un tratamiento:
+  servicio: ${name}
+
+  Entiendo que la duración y el valor se definen según cada persona.
+  Quedo atento/a a su respuesta, desde ya muchas gracias.`;
+
+  const whatsappLink = getWhatsAppLink(phone, message);
+
   return (
     <div className="bg-black/20 backdrop-blur-sm rounded-xl overflow-hidden group">
       <div className="h-60 overflow-hidden relative">
@@ -28,9 +35,15 @@ export function ServiceCard({
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-          <button className="bg-[#0a3635] text-[#f0d4a8] px-4 py-2 rounded-full text-sm">
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#0a3635] text-[#f0d4a8] px-4 py-2 rounded-full text-sm"
+          >
+            <WhatsApp fontSize="small" />
             Reservar Ahora
-          </button>
+          </a>
         </div>
       </div>
       <div className="p-6">
