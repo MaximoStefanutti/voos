@@ -1,6 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import { Search } from "@mui/icons-material";
+import { useState } from "react";
 import { ServiceCard } from "@/app/components/ui/ServiceCard/ServiceCard";
 import { services } from "@/app/helpers/servicesdata/serviceData";
 

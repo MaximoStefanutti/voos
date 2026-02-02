@@ -100,9 +100,10 @@ export default function AboutSection() {
           <div className="bg-black/20 backdrop-blur-sm rounded-xl p-6 max-w-xl mx-auto">
             <p className="text-white mb-2">B° Empalme, calle Chamical 2610</p>
             <p className="text-white mb-4">Córdoba, Argentina.</p>
-            <p className="text-white mb-2">Tel: (351) 156-xxx-xx</p>
-            <p className="text-white">Email: contacto@voos.com</p>
+            <p className="text-white mb-2">Tel: (+54) 9 351-512-8427</p>
+            <p className="text-white">Email: cesteticavoos@gmail.com</p>
             <p className="text-white">Instagram: estetica_voos</p>
+            <p className="text-white">Facebook: estetica voos</p>
             <div className="mt-6">
               <button className="px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors">
                 Contáctanos

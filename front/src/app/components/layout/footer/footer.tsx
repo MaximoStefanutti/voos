@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import {
   Email,
@@ -8,6 +7,7 @@ import {
   Phone,
   WhatsApp,
 } from "@mui/icons-material";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -72,24 +72,27 @@ export function Footer() {
             <h3 className="text-[#f0d4a8] font-medium mb-4">Enlaces</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link href="/" className="text-gray-300 hover:text-white">
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link href="/about" className="text-gray-300 hover:text-white">
                   Sobre Nosotros
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link
+                  href="/treatment"
+                  className="text-gray-300 hover:text-white"
+                >
                   Servicios
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link href="#" className="text-gray-300 hover:text-white">
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -106,15 +109,19 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone fontSize="small" className="mr-2 text-[#f0d4a8]" />
-                <span className="text-gray-300">(351) 156-xxx-xx</span>
+                <span className="text-gray-300">(+54) 9 351-512-8427</span>
               </li>
               <li className="flex items-center">
                 <Email fontSize="small" className="mr-2 text-[#f0d4a8]" />
-                <span className="text-gray-300">contacto@voos.com</span>
+                <span className="text-gray-300">esteticavoos@gmail.com</span>
               </li>
               <li className="flex items-center">
                 <Instagram fontSize="small" className="mr-2 text-[#f0d4a8]" />
                 <span className="text-gray-300">estetica_voos</span>
+              </li>
+              <li className="flex items-center">
+                <Facebook fontSize="small" className="mr-2 text-[#f0d4a8]" />
+                <span className="text-gray-300">estetica voos</span>
               </li>
             </ul>
           </div>
