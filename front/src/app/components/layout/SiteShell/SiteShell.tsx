@@ -3,7 +3,7 @@
 import { useAppUI } from "@/app/context/AppUIContext";
 import SplashText from "@/app/components/ui/text/SpalshText";
 import { NavBar } from "../navbar/NavBar";
-import { WhatsAppBot } from "@/app/components/ui/whatsapp/WhatsAppBot";
+import { WhatsAppBot } from "../../ui/whatsapp/WhatsAppBot";
 import { Footer } from "../footer/Footer";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
