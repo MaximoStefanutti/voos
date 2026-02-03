@@ -1,6 +1,6 @@
 "use client";
 
-import ServiceCard from "@/app/components/ui/serviceCard/ServiceCard";
+import ServiceCard from "@/app/components/ui/servicecard/ServiceCard";
 import { featuredServices } from "@/app/helpers/services/featuredServices";
 import Link from "next/link";
 

@@ -1,7 +1,8 @@
 "use client";
 
 import FeatureItem from "@/app/components/ui/featurecards/FeatureItem";
-import InfoCard from "@/app/components/ui/serviceCard/InfoCard";
+import InfoCard from "@/app/components/ui/servicecard/InfoCard";
+
 import { EmojiEvents, Person, WatchLater } from "@mui/icons-material";
 
 export default function AboutContent() {
