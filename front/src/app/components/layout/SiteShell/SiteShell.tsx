@@ -3,8 +3,8 @@
 import { useAppUI } from "@/app/context/AppUIContext";
 import SplashText from "../../ui/text/SpalshText";
 import { NavBar } from "../navbar/NavBar";
-import { Footer } from "../footer/footer";
-import { WhatsAppBot } from "../../ui/WhatsApp/WhatsAppBot";
+import { WhatsAppBot } from "../../ui/whatsapp/WhatsAppBot";
+import { Footer } from "../footer/Footer";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
   const { splashFinished, finishSplash } = useAppUI();

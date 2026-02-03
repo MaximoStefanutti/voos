@@ -1,7 +1,9 @@
 "use client";
 
+import { env } from "@/app/config/env";
+import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 type Slide = {
   image: string;
@@ -42,6 +44,11 @@ export function Carousel() {
   const prevSlide = () =>
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
 
+  const whastappLink = getWhatsAppLink(
+    env.whatsappPhone,
+    "¡Hola! Me gustaría reservar la promoción de masajes",
+  );
+
   return (
     <div className="relative h-screen overflow-hidden">
       {slides.map((slide, index) => (
@@ -66,7 +73,9 @@ export function Carousel() {
             </p>
             {index === 2 && (
               <button className="mt-8 px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors">
-                <a href="#">Reservar Ahora</a>
+                <a href={whastappLink} target="noopener noreferrer">
+                  Reservar Ahora
+                </a>
               </button>
             )}
           </div>

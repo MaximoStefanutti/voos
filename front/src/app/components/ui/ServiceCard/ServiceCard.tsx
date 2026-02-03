@@ -8,13 +8,15 @@ interface ServiceProps {
   id?: number;
   name: string;
   description: string;
-  duration: number;
-  price: number;
   category?: string;
   image: string;
 }
 
-export function ServiceCard({ name, description, image }: ServiceProps) {
+export default function ServiceCard({
+  name,
+  description,
+  image,
+}: ServiceProps) {
   const phone = env.whatsappPhone;
 
   const message = `Hola! 

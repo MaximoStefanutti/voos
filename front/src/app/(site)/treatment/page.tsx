@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { ServiceCard } from "@/app/components/ui/ServiceCard/ServiceCard";
-import { services } from "@/app/helpers/servicesdata/serviceData";
+import { services } from "@/app/helpers/services/serviceData";
+import ServiceCard from "@/app/components/ui/serviceCard/ServiceCard";
 
 interface CategoryProps {
   id: string;

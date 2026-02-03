@@ -8,6 +8,13 @@ import {
   WhatsApp,
 } from "@mui/icons-material";
 import Link from "next/link";
+import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
+import { env } from "@/app/config/env";
+
+const whastappLink = getWhatsAppLink(
+  env.whatsappPhone,
+  "¡Hola! Me gustaría obtener mas información sobre los tratamientos que poseen.",
+);
 
 export function Footer() {
   return (
@@ -34,7 +41,11 @@ export function Footer() {
               <a href="#" className="text-gray-300 hover:text-[#f0d4a8]">
                 <Facebook fontSize="medium" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#f0d4a8]">
+              <a
+                href={whastappLink}
+                target="noopener noreferrer"
+                className="text-gray-300 hover:text-[#f0d4a8]"
+              >
                 <WhatsApp fontSize="medium" />
               </a>
             </div>
