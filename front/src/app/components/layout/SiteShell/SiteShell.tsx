@@ -9,6 +9,10 @@ import { WhatsAppBot } from "../../ui/WhatsApp/WhatsAppBot";
 export function SiteShell({ children }: { children: React.ReactNode }) {
   const { splashFinished, finishSplash } = useAppUI();
 
+  if (!splashFinished === null) {
+    return <div className="fixed inset-0 bg-black" />;
+  }
+
   if (!splashFinished) {
     return <SplashText text="VOOS Estética" onFinish={finishSplash} />;
   }

@@ -24,7 +24,7 @@ export function Carousel() {
       description: "Descubre nuestros tratamientos holísticos",
     },
     {
-      image: "",
+      image: "masajes.png",
       title: "Promoción Especial",
       description: "20% de descuento en tu primer masaje",
     },

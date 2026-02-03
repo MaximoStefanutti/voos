@@ -45,24 +45,36 @@ export function Footer() {
             <h3 className="text-[#f0d4a8] font-medium mb-4">Servicios</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link
+                  href="/treatment"
+                  className="text-gray-300 hover:text-white"
+                >
                   Faciales
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link
+                  href="/treatment"
+                  className="text-gray-300 hover:text-white"
+                >
                   Masajes
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link
+                  href="/treatment"
+                  className="text-gray-300 hover:text-white"
+                >
                   Tratamientos Corporales
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link
+                  href="/treatment"
+                  className="text-gray-300 hover:text-white"
+                >
                   Terapias Holísticas
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -86,12 +98,7 @@ export function Footer() {
                   href="/treatment"
                   className="text-gray-300 hover:text-white"
                 >
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Contacto
+                  Tratamientos
                 </Link>
               </li>
             </ul>

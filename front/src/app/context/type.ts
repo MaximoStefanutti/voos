@@ -1,4 +1,4 @@
 export interface AppUIContextProps {
-  splashFinished: boolean;
+  splashFinished: boolean | null;
   finishSplash: () => void;
 }

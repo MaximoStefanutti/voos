@@ -1,23 +1,16 @@
-import React from "react";
 import { Favorite, Star, Spa } from "@mui/icons-material";
 import { Carousel } from "@/app/components/ui/carousel/carousel";
 import Link from "next/link";
-
-interface ServiceProps {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  image: string;
-}
-
-interface FeatureProps {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}
+import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
+import { env } from "@/app/config/env";
+import { FeatureProps, ServiceProps } from "./types";
 
 export default function Dashboard() {
+  const whatsappLink = getWhatsAppLink(
+    env.whatsappPhone,
+    "¡Hola! Me gustaría reservar la promoción especial",
+  );
+
   return (
     <div className="flex flex-col">
       {/* Carousel al inicio */}
@@ -93,9 +86,14 @@ export default function Dashboard() {
                 relajante, facial rejuvenecedor y exfoliación corporal por un
                 precio especial.
               </p>
-              <button className="mt-4 px-6 py-2 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors">
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 px-6 py-2 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors"
+              >
                 Reservar Ahora
-              </button>
+              </a>
             </div>
             <div className="md:w-1/2">
               <img

@@ -1,29 +1,37 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { AppUIContextProps } from "./type";
 
 const AppUIContext = createContext<AppUIContextProps | null>(null);
 
 export function AppUIProvider({ children }: { children: React.ReactNode }) {
-  const [splashFinished, steSplashFinished] = useState(false);
+  const [splashFinished, setsplashFinished] = useState<boolean | null>(null);
 
-  const finishSplash = () => steSplashFinished(true);
+  useEffect(() => {
+    const hasSeenSplash = sessionStorage.getItem("voos_splash_seen");
+    if (hasSeenSplash) {
+      setsplashFinished(true);
+    } else {
+      setsplashFinished(false);
+    }
+  }, []);
 
-  const value: AppUIContextProps = {
-    splashFinished,
-    finishSplash,
+  const finishSplash = () => {
+    sessionStorage.setItem("voos_splash_seen", "true");
+    setsplashFinished(true);
   };
 
   return (
-    <AppUIContext.Provider value={value}>{children}</AppUIContext.Provider>
+    <AppUIContext.Provider value={{ splashFinished, finishSplash }}>
+      {children}
+    </AppUIContext.Provider>
   );
 }
-
 export function useAppUI() {
   const context = useContext(AppUIContext);
   if (!context) {
-    throw new Error("UseAppUI must be used inseide AppUIProvider");
+    throw new Error("useAppUI must be used inside AppUIProvaider");
   }
   return context;
 }

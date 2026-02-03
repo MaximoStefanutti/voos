@@ -1,8 +1,15 @@
 "use client";
 import React from "react";
 import { EmojiEvents, Person, WatchLater } from "@mui/icons-material";
+import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
+import { env } from "@/app/config/env";
 
 export default function AboutSection() {
+  const whatsappLink = getWhatsAppLink(
+    env.whatsappPhone,
+    "¡Hola! Me gustaría obtener mas información sobre los tratamientos que poseen.",
+  );
+
   return (
     <div className="pt-24 pb-16">
       <div className="container mx-auto px-6">
@@ -105,7 +112,10 @@ export default function AboutSection() {
             <p className="text-white">Instagram: estetica_voos</p>
             <p className="text-white">Facebook: estetica voos</p>
             <div className="mt-6">
-              <button className="px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors">
+              <button
+                onClick={() => window.open(whatsappLink, "_blank")}
+                className="px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors"
+              >
                 Contáctanos
               </button>
             </div>

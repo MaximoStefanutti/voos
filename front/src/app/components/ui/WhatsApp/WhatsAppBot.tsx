@@ -19,14 +19,14 @@ export function WhatsAppBot() {
 
   if (!splashFinished || !env.whatsappPhone) return null;
 
-  const link = getWhatsAppLink(
+  const whatsappLink = getWhatsAppLink(
     env.whatsappPhone,
-    "¡Hola! Me gustaría obtener más información.",
+    "¡Hola! Me gustaría obtener mas información sobre los tratamientos que poseen.",
   );
 
   return (
     <a
-      href={link}
+      href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
@@ -49,45 +49,3 @@ export function WhatsAppBot() {
     </a>
   );
 }
-
-// "use client";
-
-// import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-
-// import { useAppUI } from "@/app/context/AppUIContext";
-// import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
-// import { env } from "@/app/config/env";
-
-// export function WhatsAppBot() {
-//   const { splashFinished } = useAppUI();
-
-//   console.log("WHATSAPP ENV:", env.whatsappPhone);
-
-//   if (!splashFinished || !env.whatsappPhone) return null;
-//   console.log("num", env.whatsappPhone);
-
-//   const link = getWhatsAppLink(
-//     env.whatsappPhone,
-//     "¡Hola! Me gustaría obtener más información.",
-//   );
-
-//   return (
-//     <a
-//       href={link}
-//       target="_blank"
-//       rel="noopener noreferrer"
-//       aria-label="Contactar por WhatsApp"
-//       className="
-//         fixed bottom-6 right-6 z-[9999]
-//         w-14 h-14 rounded-full
-//         flex items-center justify-center
-//         bg-[#25D366] text-white
-//         shadow-lg
-//         hover:scale-110 hover:bg-[#1DA851]
-//         transition-transform
-//       "
-//     >
-//       <WhatsAppIcon sx={{ fontSize: 32 }} />
-//     </a>
-//   );
-// }
