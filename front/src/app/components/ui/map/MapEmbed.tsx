@@ -2,14 +2,12 @@
 
 export default function MapEmbed() {
   return (
-    <div className="rounded-x1 overflow-hidem bordder bprder-white/10">
+    <div className="rounded-xl overflow-hidden border border-white/10 h-[180px] lg:h-full">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.0837519498045!2d-64.12845662350631!3d-31.43936117425124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432bd157905a4af%3A0xcf863f5cc76c614d!2sEst%C3%A9tica%20Voos!5e0!3m2!1ses!2sar!4v1770118965653!5m2!1ses!2sar"
-        width="100%"
-        height="100%"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="w-full h-[350px] lg:h-full"
+        className="w-full h-full"
       />
     </div>
   );

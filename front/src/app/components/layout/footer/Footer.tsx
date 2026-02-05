@@ -1,155 +1,44 @@
-import Image from "next/image";
-import {
-  Email,
-  Facebook,
-  Instagram,
-  Map,
-  Phone,
-  WhatsApp,
-} from "@mui/icons-material";
-import Link from "next/link";
-import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
-import { env } from "@/app/config/env";
+"use client";
 
-const whastappLink = getWhatsAppLink(
-  env.whatsappPhone,
-  "¡Hola! Me gustaría obtener mas información sobre los tratamientos que poseen.",
-);
+import Image from "next/image";
+import { FooterSocials } from "./FooterSocials";
+import { FooterLinks } from "./FooterLinks";
+import { FooterContact } from "./FooterContact";
+import { FooterService } from "./FooterServices";
+import { Copyright } from "@mui/icons-material";
 
 export function Footer() {
   return (
     <footer className="bg-[#0a3635]/90 text-white">
-      <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo y descripción */}
-          <div className="md:col-span-1">
+      <div className="container mx-auto px-11 py-3">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+          <div className="lg:col-span1">
             <Image
-              src="logo.svg"
+              src="/logo.svg"
               alt="VOOS Logo"
-              width={150}
-              height={50}
+              width={140}
+              height={60}
               className="mb-4"
             />
-            <p className="text-sm text-gray-300 mb-4">
-              VOOS - Tu mejor versión. Estética holística que combina técnicas
+            <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+              VOOS - tu mejor versión. Estetíca holística que combina técnicas
               ancestrales con tecnología moderna para tu bienestar.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#f0d4a8]">
-                <Instagram fontSize="medium" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#f0d4a8]">
-                <Facebook fontSize="medium" />
-              </a>
-              <a
-                href={whastappLink}
-                target="noopener noreferrer"
-                className="text-gray-300 hover:text-[#f0d4a8]"
-              >
-                <WhatsApp fontSize="medium" />
-              </a>
-            </div>
+            <FooterSocials />
           </div>
 
-          {/* Servicios */}
-          <div>
-            <h3 className="text-[#f0d4a8] font-medium mb-4">Servicios</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/treatment"
-                  className="text-gray-300 hover:text-white"
-                >
-                  Faciales
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/treatment"
-                  className="text-gray-300 hover:text-white"
-                >
-                  Masajes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/treatment"
-                  className="text-gray-300 hover:text-white"
-                >
-                  Tratamientos Corporales
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/treatment"
-                  className="text-gray-300 hover:text-white"
-                >
-                  Terapias Holísticas
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <FooterService />
 
-          {/* Enlaces */}
-          <div>
-            <h3 className="text-[#f0d4a8] font-medium mb-4">Enlaces</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-white">
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-white">
-                  Sobre Nosotros
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/treatment"
-                  className="text-gray-300 hover:text-white"
-                >
-                  Tratamientos
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <FooterLinks />
 
-          {/* Contacto */}
-          <div>
-            <h3 className="text-[#f0d4a8] font-medium mb-4">Contacto</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <Map fontSize="small" className="mr-2 text-[#f0d4a8] mt-0.5" />
-                <span className="text-gray-300">
-                  Córdoba, Argentina. B° Empalme, calle Chamical 2610
-                </span>
-              </li>
-              <li className="flex items-center">
-                <Phone fontSize="small" className="mr-2 text-[#f0d4a8]" />
-                <span className="text-gray-300">(+54) 9 351-512-8427</span>
-              </li>
-              <li className="flex items-center">
-                <Email fontSize="small" className="mr-2 text-[#f0d4a8]" />
-                <span className="text-gray-300">esteticavoos@gmail.com</span>
-              </li>
-              <li className="flex items-center">
-                <Instagram fontSize="small" className="mr-2 text-[#f0d4a8]" />
-                <span className="text-gray-300">estetica_voos</span>
-              </li>
-              <li className="flex items-center">
-                <Facebook fontSize="small" className="mr-2 text-[#f0d4a8]" />
-                <span className="text-gray-300">estetica voos</span>
-              </li>
-            </ul>
-          </div>
+          <FooterContact />
         </div>
 
-        {/* Footer inferior */}
-        <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400 mb-4 md:mb-0">
-            © {new Date().getFullYear()} VOOS. Todos los derechos reservados.
-          </p>
+        <div className="border-t border-white/10">
+          <div className="container mx-auto px-6 py-4 flex intems-center justify-center text-sm text-gray-400">
+            <Copyright fontSize="inherit" />
+            {new Date().getFullYear()} VOSS. Todos los derechos reservados.
+          </div>
         </div>
       </div>
     </footer>

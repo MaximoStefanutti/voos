@@ -32,8 +32,9 @@ export default function ContactSection() {
           </button>
         </div>
       </div>
-
-      <MapEmbed />
+      <div className="lg-5:pl-10">
+        <MapEmbed />
+      </div>
     </div>
   );
 }
