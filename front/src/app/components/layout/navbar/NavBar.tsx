@@ -12,7 +12,7 @@ export function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg:[#0a3635]/90 backdrop-blur">
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* LOGO */}
         <Link href="/" className="relative w-44 h-16">
@@ -31,7 +31,7 @@ export function NavBar() {
         {/* MOBILE BUTTON*/}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-[#f0d48]"
+          className="md:hidden text-[#f0d4a8]"
           aria-label="Abrir menú"
         >
           <Menu />

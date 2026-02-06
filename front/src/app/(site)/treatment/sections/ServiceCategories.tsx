@@ -5,19 +5,14 @@ interface Category {
   name: string;
 }
 
-const categories: Category[] = [
-  { id: "todos", name: "Todos" },
-  { id: "facial", name: "Faciales" },
-  { id: "corporal", name: "Corporales" },
-  { id: "masajes", name: "Masajes" },
-];
-
 interface Props {
+  categories: Category[];
   activeCategory: string;
   onChange: (category: string) => void;
 }
 
 export default function ServicesCategories({
+  categories,
   activeCategory,
   onChange,
 }: Props) {

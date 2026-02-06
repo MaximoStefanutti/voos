@@ -1,8 +1,10 @@
+export type ServiceCategory = "masajes" | "facial" | "corporal" | "depilación";
+
 export interface ServiceProps {
   id: number;
   name: string;
   description: string;
-  category: string;
+  category: ServiceCategory;
   image: string;
 }
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { footerLinks } from "@/app/config/footer.config";
+import { scrollToTop } from "@/app/helpers/scroll/scrollToTop";
 import Link from "next/link";
 
 export function FooterLinks() {
@@ -12,6 +13,7 @@ export function FooterLinks() {
           <li key={link.href}>
             <Link
               href={link.href}
+              onClick={() => scrollToTop(600)}
               className="text-gray-300 hover:text-white transition"
             >
               {link.label}

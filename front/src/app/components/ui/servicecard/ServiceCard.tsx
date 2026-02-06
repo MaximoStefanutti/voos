@@ -36,12 +36,14 @@ export default function ServiceCard({
           alt={name}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
+
+        {/*Para Desktop (hover)*/}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
           <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#0a3635] text-[#f0d4a8] px-4 py-2 rounded-full text-sm"
+            className="flex items-center gap-2 bg-[#0a3635] text-[#f0d4a8] px-4 py-2 rounded-full text-sm transition-colors"
           >
             <WhatsApp fontSize="small" />
             Reservar Ahora
@@ -53,6 +55,17 @@ export default function ServiceCard({
           <h3 className="text-xl text-white">{name}</h3>
         </div>
         <p className="text-gray-300 text-sm mb-3">{description}</p>
+
+        {/*Para mobile (visible siempre) */}
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex md:hidden items-center justify-center gap-2 w-full bg-[#0a3635] text-[#f0d4a8] py-2 rounded-full text-sm"
+        >
+          <WhatsApp fontSize="small" />
+          Reservar ahora
+        </a>
       </div>
     </div>
   );

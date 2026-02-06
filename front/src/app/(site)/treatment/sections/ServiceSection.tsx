@@ -1,15 +1,40 @@
 "use client";
 
 import { services } from "@/app/helpers/services/serviceData";
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 import ServicesHeader from "./ServicesHeader";
 import ServicesCategories from "./ServiceCategories";
 import ServicesGrid from "./ServiceGrid";
 
 export default function ServicesSection() {
+  const searchParams = useSearchParams();
+  const categorFromURl = searchParams.get("category");
+
   const [activeCategory, setActiveCategory] = useState("todos");
 
-  const filterdServices =
+  //sincroniza la URL con el estado.
+  useEffect(() => {
+    if (categorFromURl) {
+      setActiveCategory(categorFromURl);
+    }
+  }, [categorFromURl]);
+
+  const categories = useMemo(() => {
+    const uniqueCategories = Array.from(
+      new Set(services.map((service) => service.category)),
+    );
+
+    return [
+      { id: "todos", name: "Todos" },
+      ...uniqueCategories.map((cat) => ({
+        id: cat,
+        name: cat.charAt(0).toUpperCase() + cat.slice(1),
+      })),
+    ];
+  }, []);
+
+  const filteredServices =
     activeCategory === "todos"
       ? services
       : services.filter((service) => service.category === activeCategory);
@@ -20,11 +45,12 @@ export default function ServicesSection() {
         <ServicesHeader />
 
         <ServicesCategories
+          categories={categories}
           activeCategory={activeCategory}
           onChange={setActiveCategory}
         />
 
-        <ServicesGrid services={filterdServices} />
+        <ServicesGrid service={filteredServices} />
       </div>
     </section>
   );

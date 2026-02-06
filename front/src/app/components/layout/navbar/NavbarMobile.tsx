@@ -16,8 +16,8 @@ export function NavbarMobile({ open, onClose }: Props) {
   if (!open) return null;
 
   return (
-    <div className="md: hidden absolute top-full left-0 w-full bg-[#0a3635] border-t border-white/10">
-      <ul className="flex felx-col gap-2 p-4">
+    <div className="md:hidden left-0 w-full bg-[#0a3635] border-t border-white/10">
+      <ul className="flex flex-col gap-2 p-4 pt-2">
         {NavLinks.map((link) => {
           const isActive = pathname === link.href;
 
