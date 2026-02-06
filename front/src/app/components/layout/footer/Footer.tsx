@@ -20,7 +20,7 @@ export function Footer() {
               height={60}
               className="mb-4"
             />
-            <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+            <p className="text-xs text-gray-300 mb-4 leading-relaxed">
               VOOS - tu mejor versión. Estetíca holística que combina técnicas
               ancestrales con tecnología moderna para tu bienestar.
             </p>

@@ -1,17 +1,18 @@
 "use client";
 
-import { services } from "@/app/helpers/services/serviceData";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import ServicesHeader from "./ServicesHeader";
 import ServicesCategories from "./ServiceCategories";
 import ServicesGrid from "./ServiceGrid";
+import { useIsDesktop } from "@/app/hook/useIsDesktop";
+import { services } from "@/app/helpers/services/serviceData";
 
 export default function ServicesSection() {
   const searchParams = useSearchParams();
   const categorFromURl = searchParams.get("category");
-
   const [activeCategory, setActiveCategory] = useState("todos");
+  const isDesktop = useIsDesktop();
 
   //sincroniza la URL con el estado.
   useEffect(() => {
@@ -50,7 +51,11 @@ export default function ServicesSection() {
           onChange={setActiveCategory}
         />
 
-        <ServicesGrid service={filteredServices} />
+        <ServicesGrid
+          key={activeCategory}
+          service={filteredServices}
+          enableAnimations={isDesktop}
+        />
       </div>
     </section>
   );

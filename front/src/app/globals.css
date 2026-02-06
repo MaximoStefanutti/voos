@@ -5,6 +5,33 @@
   --foreground: #171717;
 }
 
+@font-face {
+  font-family: "ITC Avant Garde Pro";
+  src: url("/fonts/itc-avant-garde/fonnts.com-ITC_Avant_Garde_Gothic_Pro_Book.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Pro";
+  src: url("/fonts/itc-avant-garde/fonnts.com-ITC_Avant_Garde_Gothic_Pro_Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Pro";
+  src: url("/fonts/itc-avant-garde/fonnts.com-ITC_Avant_Garde_Gothic_Pro_Bold.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -19,8 +46,24 @@
   }
 }
 
+html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "ITC Avant Garde Pro", system-ui, sans-serif;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
 }

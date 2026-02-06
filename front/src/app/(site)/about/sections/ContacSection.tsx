@@ -1,5 +1,6 @@
 "use client";
 
+import RevealOnSroll from "@/app/components/ui/animation/RevealOnScroll";
 import MapEmbed from "@/app/components/ui/map/MapEmbed";
 import { env } from "@/app/config/env";
 import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
@@ -32,8 +33,10 @@ export default function ContactSection() {
           </button>
         </div>
       </div>
-      <div className="lg-5:pl-10">
-        <MapEmbed />
+      <div className="lg-5:pl-10 animate-fade-in">
+        <RevealOnSroll delay={300}>
+          <MapEmbed />
+        </RevealOnSroll>
       </div>
     </div>
   );

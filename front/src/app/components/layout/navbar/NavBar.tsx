@@ -12,7 +12,7 @@ export function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur">
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur ">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* LOGO */}
         <Link href="/" className="relative w-44 h-16">
