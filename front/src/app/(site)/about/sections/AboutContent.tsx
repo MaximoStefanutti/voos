@@ -42,12 +42,12 @@ export default function AboutContent() {
               </p>
             </div>
           </div>
-          <div className="relative h-80 lg:h-auto">
-            <div className="absolute w-3/4 h-3/4 top-0 right-0 rounded-lg overflow-hidden">
+          <div className="relative">
+            <div className="relative w-full max-w-lg mx-auto rounded-lg overflow-hidden">
               <img
                 src="fondo.png"
-                alt="VOOS Logo"
-                className="w-full h-full object-cover"
+                alt="VOOS"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>

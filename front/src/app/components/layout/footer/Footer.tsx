@@ -14,7 +14,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
           <div className="lg:col-span1">
             <Image
-              src="/logo.svg"
+              src="/logo blanco.png"
               alt="VOOS Logo"
               width={140}
               height={60}

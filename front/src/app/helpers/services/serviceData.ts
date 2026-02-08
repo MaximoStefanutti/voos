@@ -1,4 +1,9 @@
-export type ServiceCategory = "masajes" | "facial" | "corporal" | "depilación";
+export type ServiceCategory =
+  | "masajes"
+  | "facial"
+  | "corporal"
+  | "depilación"
+  | "terapia energética";
 
 export interface ServiceProps {
   id: number;
@@ -92,5 +97,14 @@ export const services: ServiceProps[] = [
     description: "Diseño y cuidado de cejas y pestañas.",
     category: "facial",
     image: "cejas.jpg",
+  },
+
+  {
+    id: 12,
+    name: "Pendulo hebréo",
+    description:
+      "Tratamiento de tererapia energétiva para equilibrar el cuerpo y la mente.",
+    category: "terapia energética",
+    image: "pendulo.jpg",
   },
 ];
