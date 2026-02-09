@@ -41,7 +41,19 @@ export const footerContact = [
 ];
 
 export const footerSocials = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: WhatsApp, href: "#", label: "WhatsApp" },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/estetica_voos?igsh=ZGdiZHM2aTVxc25q",
+    label: "Instagram",
+  },
+  {
+    icon: Facebook,
+    href: "https://www.facebook.com/profile.php?id=61578855713080",
+    label: "Facebook",
+  },
+  {
+    icon: WhatsApp,
+    href: "whatsapp",
+    label: "WhatsApp",
+  },
 ];
