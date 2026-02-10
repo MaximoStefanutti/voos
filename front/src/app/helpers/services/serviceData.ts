@@ -81,7 +81,7 @@ export const services: ServiceProps[] = [
     description:
       "Drenaje linfático mecánico que mejora la circulación, elimina líquidos y ayuda a combatir la celulitis.",
     category: "corporal",
-    image: "Presoterapia.jpg",
+    image: "presoterapia.jpg",
   },
   {
     id: 10,

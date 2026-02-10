@@ -20,7 +20,7 @@ export const featuredServices: ServiceProps[] = [
     name: "Reiki",
     description:
       "Terapia energética que promueve la relajación y el equilibrio emocional.",
-    image: "Reiki.jpg",
+    image: "reiki.jpg",
   },
 
   {
