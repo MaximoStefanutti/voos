@@ -69,7 +69,7 @@ export const services: ServiceProps[] = [
   },
   {
     id: 8,
-    name: "Readiofrecuencia Fraccionada",
+    name: "Radiofrecuencia Fraccionada",
     description:
       "Estimula el colágeno, mejora arrugas, textura y firmeza del rostro sin dañar la superficie cutánea.",
     category: "facial",
@@ -101,10 +101,46 @@ export const services: ServiceProps[] = [
 
   {
     id: 12,
-    name: "Pendulo hebréo",
+    name: "Péndulo hebreo",
     description:
       "Tratamiento de tererapia energétiva para equilibrar el cuerpo y la mente.",
     category: "terapia energética",
     image: "pendulo.jpg",
+  },
+
+  {
+    id: 13,
+    name: "Botox",
+    description:
+      "Tratamiento para reducir arrugas faciales mediante inyecciones de toxina botulínica.",
+    category: "facial",
+    image: "botox.jpg",
+  },
+
+  {
+    id: 14,
+    name: "Reiki",
+    description:
+      "Terapia energética que promueve la relajación y el equilibrio emocional a través de la imposición de manos.",
+    category: "terapia energética",
+    image: "reiki.jpg",
+  },
+
+  {
+    id: 15,
+    name: "Maderoterapia",
+    description:
+      "Técnica de masaje que utiliza herramientas de madera para estimular la circulación y tonificar el cuerpo.",
+    category: "masajes",
+    image: "maderoterapia.jpg",
+  },
+
+  {
+    id: 16,
+    name: "Limpieza Facial",
+    description:
+      "Limpieza profunda para eliminar impurezas y revitalizar la piel del rostro.",
+    category: "facial",
+    image: "limpieza-facial.jpg",
   },
 ];

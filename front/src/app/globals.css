@@ -34,24 +34,8 @@
 
 @font-face {
   font-family: "Boowie";
-  src: url("#") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Boowie";
-  src: url("#") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Boowie";
-  src: url("#") format("opentype");
-  font-weight: 700;
+  src: url("/fonts/boowie/BOOWIE.ttf") format("opentype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -90,4 +74,11 @@ body {
 
 .animate-fade-in {
   animation: fade-in 0.6s ease-out both;
+}
+
+h1,
+h2,
+h3,
+.heading {
+  font-family: "Boowie", serif;
 }
