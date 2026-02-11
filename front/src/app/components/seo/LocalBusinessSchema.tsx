@@ -20,8 +20,8 @@ export default function LocalBusinessSchema() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: -31.4167,
-      longitude: -64.1833,
+      latitude: -31.4393,
+      longitude: -64.1258,
     },
     openingHoursSpecification: [
       {
@@ -38,6 +38,14 @@ export default function LocalBusinessSchema() {
         closes: "20:00",
       },
     ],
+
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: "Córdoba Capital",
+    },
+
+    hasMap: "https://www.google.com/maps/search/?api=1&query=-31.4393,-64.1258",
+
     sameAs: [
       "https://www.instagram.com/voosestetica",
       "https://wa.me/5493515128427",
