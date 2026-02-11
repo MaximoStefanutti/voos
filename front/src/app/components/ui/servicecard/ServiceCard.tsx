@@ -5,10 +5,8 @@ import { WhatsApp } from "@mui/icons-material";
 import { env } from "@/app/config/env";
 
 interface ServiceProps {
-  id?: number;
   name: string;
   description: string;
-  category?: string;
   image: string;
 }
 
@@ -19,9 +17,9 @@ export default function ServiceCard({
 }: ServiceProps) {
   const phone = env.whatsappPhone;
 
-  const message = `Hola! 
+  const message = `¡Hola! 
   Quiero reservar un tratamiento:
-  servicio: ${name}
+  Servicio: ${name}
 
   Entiendo que la duración y el valor se definen según cada persona.
   Quedo atento/a a su respuesta, desde ya muchas gracias.`;
@@ -29,7 +27,7 @@ export default function ServiceCard({
   const whatsappLink = getWhatsAppLink(phone, message);
 
   return (
-    <div className="bg-black/20 backdrop-blur-sm rounded-xl overflow-hidden group">
+    <article className="bg-black/20 backdrop-blur-sm rounded-xl overflow-hidden group">
       <div className="h-60 overflow-hidden relative">
         <img
           src={image}
@@ -40,6 +38,7 @@ export default function ServiceCard({
         {/*Para Desktop (hover)*/}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
           <a
+            aria-label={`Reservar tratamiento ${name} por WhatsApp`}
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -58,6 +57,7 @@ export default function ServiceCard({
 
         {/*Para mobile (visible siempre) */}
         <a
+          aria-label={`Reservar tratamiento ${name} por WhatsApp`}
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -67,6 +67,6 @@ export default function ServiceCard({
           Reservar ahora
         </a>
       </div>
-    </div>
+    </article>
   );
 }

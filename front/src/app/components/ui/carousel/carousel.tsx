@@ -41,6 +41,7 @@ export function Carousel() {
 
   const nextSlide = () =>
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+
   const prevSlide = () =>
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
 
@@ -50,12 +51,12 @@ export function Carousel() {
   );
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-[70vh] md:h[80vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
+            index === currentSlide ? "opacity-100 z-10" : "opacity-0 1-0"
           }`}
         >
           <div
@@ -64,19 +65,22 @@ export function Carousel() {
           >
             <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
           </div>
-          <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-            <h2 className="text-5xl md:text-7xl font-light text-white mb-4">
+          <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6">
+            <h2 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-wide text-white mb-4">
               {slide.title}
             </h2>
-            <p className="text-xl md:text-2xl text-[#f0d4a8]">
+            <p className="text-lg md:text-x1 lg:text-2x1 text-[#f0d4a8] max-w-2x1">
               {slide.description}
             </p>
             {index === 2 && (
-              <button className="mt-8 px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors">
-                <a href={whastappLink} target="noopener noreferrer">
-                  Reservar Ahora
-                </a>
-              </button>
+              <a
+                href={whastappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80 transition-colors"
+              >
+                Reservar Ahora
+              </a>
             )}
           </div>
         </div>
@@ -85,24 +89,24 @@ export function Carousel() {
       {/* Iconos MUI como botones con Tailwind */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors z-10 flex items-center justify-center"
+        className="absolute left-4 top-1/2 z-20 flex -translate-y-1/2 items-center jutify-center rounded-full bg-black/30 p-2 transition-colors hover:bg-black/50"
       >
         <ChevronLeft className="text-3xl text-[#f0d4a8]" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors z-10 flex items-center justify-center"
+        className="absolute right-4 top-1/2 z-20 flex -translate-y-1/2 items-center jutify-center rounded-full bg-black/30 p-2 transition-colors hover:bg-black/50"
       >
         <ChevronRight className="text-3xl text-[#f0d4a8]" />
       </button>
 
       {/* Paginación */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+      <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-colors ${
+            className={`h-2 w-2 rounded-full transition-colors ${
               index === currentSlide ? "bg-[#f0d4a8]" : "bg-white/50"
             }`}
           />

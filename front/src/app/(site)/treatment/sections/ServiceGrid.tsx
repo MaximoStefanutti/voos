@@ -3,7 +3,6 @@
 import RevealOnSroll from "@/app/components/ui/animation/RevealOnScroll";
 import ServiceCard from "@/app/components/ui/servicecard/ServiceCard";
 import { ServiceProps } from "@/app/helpers/services/featuredServices";
-import { services } from "@/app/helpers/services/serviceData";
 
 interface Props {
   service: ServiceProps[];
@@ -16,20 +15,15 @@ export default function ServicesGrid({ service, enableAnimations }: Props) {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {services.map((service, index) => {
+      {service.map((item, index) => {
         const shouldAnimate = enableAnimations && index >= startAnimation;
 
-        const card = <ServiceCard key={service.id} {...service} />;
-
         return shouldAnimate ? (
-          <RevealOnSroll
-            key={service.id}
-            delay={(index - startAnimation) * 0.1}
-          >
-            {card}
+          <RevealOnSroll key={item.id} delay={(index - startAnimation) * 0.1}>
+            <ServiceCard {...item} />
           </RevealOnSroll>
         ) : (
-          card
+          <ServiceCard key={item.id} {...item} />
         );
       })}
     </div>

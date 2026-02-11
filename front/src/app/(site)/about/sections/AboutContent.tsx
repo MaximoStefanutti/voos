@@ -2,8 +2,8 @@
 
 import FeatureItem from "@/app/components/ui/featurecards/FeatureItem";
 import InfoCard from "@/app/components/ui/servicecard/InfoCard";
-
 import { EmojiEvents, Person, WatchLater } from "@mui/icons-material";
+import Image from "next/image";
 
 export default function AboutContent() {
   return (
@@ -11,11 +11,16 @@ export default function AboutContent() {
       <div className="container mx-auto px-6">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-light text-white mb-2">
-            Sobre VOOS Estética
+            Centro de estética en Córdoba
           </h1>
           <p className="text-[#f0d4a8]/80 text-lg">
-            Conoce nuestra filosofía y lo que nos hace diferentes
+            VOOS Estética es un centro de estética en Córdoba Capital
+            especializado en tratamientos faciales, corporales y bienestar
+            integral.
           </p>
+          <h2 className="sr-only">
+            Tratamientos faciales y corporales en Córdoba Capital
+          </h2>
         </header>
 
         {/* Historia y fotos */}
@@ -24,10 +29,11 @@ export default function AboutContent() {
             <h2 className="text-3xl text-white mb-6">Nuestra Historia</h2>
             <div className="space-y-4 text-gray-300">
               <p>
-                VOOS nace de la pasión por el bienestar integral y la belleza
-                natural. Fundada con la visión de crear un espacio donde cada
-                persona pueda encontrar su mejor versión, combinando técnicas
-                ancestrales con tecnología de vanguardia.
+                VOOS Estética nace en Córdoba Capital de la pasión por el
+                bienestar integral y la belleza natural. Creamos un espacio
+                donde cada persona puede acceder a tratamientos facialies y
+                corporales personalizados, combinando tecnología moderna con
+                técnicas especializadas
               </p>
               <p>
                 Nuestro nombre, VOOS, representa el vuelo hacia una mejor
@@ -46,7 +52,7 @@ export default function AboutContent() {
             <div className="relative w-full max-w-lg mx-auto rounded-lg overflow-hidden">
               <img
                 src="fondo.png"
-                alt="VOOS"
+                alt="Centro de estética VOOS en Córdoba Capital"
                 className="w-full h-auto object-contain"
               />
             </div>
@@ -81,7 +87,7 @@ export default function AboutContent() {
             <InfoCard
               icon={<Person sx={{ fontSize: 40, color: "#f0d4a8" }} />}
               title="Profesionales Calificados"
-              description="Nuestro equipo está formado por expertos con amplia experiencia y formación continua en las últimas técnicas."
+              description="Equipo profesional en estética facial y corporal en Córdoba, con formación continua y atención personalizada."
             />
             <InfoCard
               icon={<EmojiEvents sx={{ fontSize: 40, color: "#f0d4a8" }} />}

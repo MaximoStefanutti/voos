@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { FooterSocials } from "./FooterSocials";
 import { FooterLinks } from "./FooterLinks";
@@ -15,14 +13,15 @@ export function Footer() {
           <div className="lg:col-span1">
             <Image
               src="/logo-blanco.png"
-              alt="VOOS Logo"
+              alt="VOOS Estética integral en Córdoba Capital"
               width={140}
               height={60}
               className="mb-4"
             />
             <p className="text-xs text-gray-300 mb-4 leading-relaxed">
-              VOOS - tu mejor versión. Estetíca holística que combina técnicas
-              ancestrales con tecnología moderna para tu bienestar.
+              VOOS - tu mejor versión. Estetíca holístic en Córdoba Capital que
+              combina técnicas ancestrales con tecnología moderna para tu
+              bienestar integral.
             </p>
             <FooterSocials />
           </div>
@@ -35,10 +34,11 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10">
-          <div className="container mx-auto px-6 py-4 flex intems-center justify-center text-sm text-gray-400">
+          <p className="flex items-center gap-1 text-sm text-gray-400">
             <Copyright fontSize="inherit" />
-            {new Date().getFullYear()} VOSS. Todos los derechos reservados.
-          </div>
+            {new Date().getFullYear()} Centro de Estética VOOS. Todos los
+            derechos reservados.
+          </p>
         </div>
       </div>
     </footer>

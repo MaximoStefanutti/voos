@@ -18,8 +18,8 @@ export default function ContactSection() {
         Te esperamos para comenzar tu viaje hacia tu mejor versión.
       </p>
       <div className="bg-black/20 backdrop-blur-sm rounded-xl p-6 max-w-xl mx-auto">
-        <p className="text-white mb-2">B° Empalme, calle Chamical 2610</p>
-        <p className="text-white mb-4">Córdoba, Argentina.</p>
+        <p className="text-white mb-2">Barrio Empalme - Chamical 2610</p>
+        <p className="text-white mb-4">Córdoba Capital, Argentina.</p>
         <p className="text-white mb-2">Tel: (+54) 9 351-512-8427</p>
         <p className="text-white">Email: cesteticavoos@gmail.com</p>
         <p className="text-white">Instagram: estetica_voos</p>

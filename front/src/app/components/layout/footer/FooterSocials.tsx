@@ -11,7 +11,7 @@ export function FooterSocials() {
   );
 
   return (
-    <div className="flex gap-4 mt-4">
+    <nav aria-label="Redes Sociales" className="flex gap-4 mt-4">
       {footerSocials.map(({ icon: Icon, href, label }) => {
         const finalHref = href === "whatsapp" ? whatsappLink : href;
         return (
@@ -21,12 +21,19 @@ export function FooterSocials() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className="text-gray-300 hover:text-[#f0d4a8] trasition-colors"
+            className="
+            text-gray-300
+            hover:text-[#f0d4a8]
+            transition-colors
+            focus-visible:ring-2
+            focus-visible:ring-[#f0d4a8]
+            focus-visible:ring-offset-2
+            focus-visible:ring-offset-[#0a3635]"
           >
             <Icon fontSize="medium" />
           </a>
         );
       })}
-    </div>
+    </nav>
   );
 }

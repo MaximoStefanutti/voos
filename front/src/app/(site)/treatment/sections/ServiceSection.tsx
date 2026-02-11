@@ -10,16 +10,18 @@ import { services } from "@/app/helpers/services/serviceData";
 
 export default function ServicesSection() {
   const searchParams = useSearchParams();
-  const categorFromURl = searchParams.get("category");
-  const [activeCategory, setActiveCategory] = useState("todos");
+  const categoryFromURl = searchParams.get("category");
+  const [activeCategory, setActiveCategory] = useState(
+    categoryFromURl ?? "todos",
+  );
   const isDesktop = useIsDesktop();
 
   //sincroniza la URL con el estado.
   useEffect(() => {
-    if (categorFromURl) {
-      setActiveCategory(categorFromURl);
+    if (categoryFromURl) {
+      setActiveCategory(categoryFromURl);
     }
-  }, [categorFromURl]);
+  }, [categoryFromURl]);
 
   const categories = useMemo(() => {
     const uniqueCategories = Array.from(

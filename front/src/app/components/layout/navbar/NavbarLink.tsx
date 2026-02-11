@@ -9,13 +9,21 @@ export function NavbarLinks() {
   const pathname = usePathname();
 
   return (
-    <ul className="hidden md:flex items center gap-2 bg-[#0a3635] px-4 py-2 rounded-full ">
+    <ul className="hidden md:flex items-center gap-2]">
       {NavLinks.map((link) => {
         const isActive = pathname === link.href;
 
         return (
-          <li key={link.href}>
-            <Link href={link.href} className={navLinkClass(isActive)}>
+          <li
+            key={link.href}
+            className={navLinkClass(isActive)}
+            aria-current={isActive ? "page" : undefined}
+          >
+            <Link
+              href={link.href}
+              aria-label={link.ariaLabel}
+              className={navLinkClass(isActive)}
+            >
               {link.label}
             </Link>
           </li>

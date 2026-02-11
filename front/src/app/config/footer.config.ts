@@ -28,7 +28,7 @@ export const footerLinks = [
 export const footerContact = [
   {
     icon: Map,
-    text: "B° Empalme, Chamical 2610, Córdoba, Argentina",
+    text: "Barrio Empalme, Chamical 2610, Córdoba, Argentina",
   },
   {
     icon: Phone,
