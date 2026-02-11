@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function FooterLinks() {
   return (
-    <nav aria-lable="Enlaces del sitio">
+    <nav aria-label="Enlaces del sitio">
       <h3 className="text-[#f0d4a8] font-medium text-sm mb-3 uppercase tracking-wide">
         Enlaces del sitio
       </h3>
@@ -15,7 +15,7 @@ export function FooterLinks() {
           >
             <Link
               href={link.href}
-              className="text-gray-300 text-sm hover:text-white transition"
+              className="text-gray-300 text-sm hover:text-[#f0d4a8] transition-colors"
             >
               {link.label}
             </Link>
