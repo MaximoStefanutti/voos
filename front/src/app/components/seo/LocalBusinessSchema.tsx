@@ -2,11 +2,11 @@ export default function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    "@id": "https://www.voosestetica.com.ar/#business",
+    "@id": "https://voos-eight.vercel.app//#business",
     name: "VOOS Estética Integral",
-    url: "https://www.voosestetica.com.ar",
-    logo: "https://www.voosestetica.com.ar/logo-blanco.png",
-    image: "https://www.voosestetica.com.ar/og-image.jpg",
+    url: "https://voos-eight.vercel.app/",
+    logo: "https://voos-eight.vercel.app//logo-blanco.png",
+    image: "https://voos-eight.vercel.app//og-image.jpg",
     description:
       "Centro de estética integral en Córdoba Capital especializado en tratamientos faciales, corporales y bienestar holístico",
     telephone: "+5493515128427",

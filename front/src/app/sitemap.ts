@@ -1,24 +1,23 @@
 import { url } from "inspector";
 import { MetadataRoute } from "next";
+import { siteConfig } from "./config/site.config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.voosestetica.com.ar";
-
   return [
     {
-      url: `${baseUrl}/`,
+      url: `${siteConfig.url}/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${siteConfig.url}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/treatment`,
+      url: `${siteConfig.url}/treatment`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,

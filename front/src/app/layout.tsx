@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import LocalBusinessSchema from "./components/seo/LocalBusinessSchema";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.voosestetica.com.ar"),
+  metadataBase: new URL("https://voos-eight.vercel.app/"),
   title: {
     default: "Centro de estética en Córdoba | VOOS Estética integral",
     template: "%s | VOOS Estética Integral",
