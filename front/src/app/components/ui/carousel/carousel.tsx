@@ -100,18 +100,20 @@ export function Carousel() {
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 z-20 flex -translate-y-1/2 items-center jutify-center rounded-full bg-black/30 p-2 transition-colors hover:bg-black/50"
+        aria-label="paginación lado izquierdo"
       >
         <ChevronLeft className="text-3xl text-[#f0d4a8]" />
       </button>
       <button
         onClick={nextSlide}
         className="absolute right-4 top-1/2 z-20 flex -translate-y-1/2 items-center jutify-center rounded-full bg-black/30 p-2 transition-colors hover:bg-black/50"
+        aria-label="paginación lado derecho"
       >
         <ChevronRight className="text-3xl text-[#f0d4a8]" />
       </button>
 
       {/* Paginación */}
-      <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 z-10">
+      <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 z-10 gap-2">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -119,6 +121,7 @@ export function Carousel() {
             className={`h-2 w-2 rounded-full transition-colors ${
               index === currentSlide ? "bg-[#f0d4a8]" : "bg-white/50"
             }`}
+            aria-label="indicación de paginación"
           />
         ))}
       </div>
