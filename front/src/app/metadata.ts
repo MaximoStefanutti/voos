@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://voos-eight.vercel.app/"),
+  metadataBase: new URL("https://voosestetica.com.ar"),
   title: {
     default: "VOOS Estética Integral | Córdoba",
     template: "%s | VOOS Estética Integral",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://voos-eight.vercel.app/",
+    url: "voosestetica.com.ar",
     siteName: "VOOS Estética Integral",
     title: "VOOS Estética Integral | Córdoba",
     description:

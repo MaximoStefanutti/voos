@@ -1,4 +1,4 @@
 export const siteConfig = {
   name: "Voos Estética integral",
-  url: "https://voos-eight.vercel.app/",
+  url: "https://voosestetica.com.ar",
 };

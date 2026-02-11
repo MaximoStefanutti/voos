@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import { MetadataRoute } from "next";
 import { siteConfig } from "./config/site.config";
 

@@ -67,6 +67,7 @@ export function Carousel() {
               alt={slide.title}
               fill
               priority={index === 0}
+              fetchPriority="high"
               sizes="100vw"
               className="object-cover"
             />
