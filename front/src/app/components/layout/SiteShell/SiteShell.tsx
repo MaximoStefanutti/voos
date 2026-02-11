@@ -9,10 +9,6 @@ import { Footer } from "../footer/Footer";
 export function SiteShell({ children }: { children: React.ReactNode }) {
   const { splashFinished, finishSplash } = useAppUI();
 
-  if (!splashFinished === null) {
-    return <div className="fixed inset-0 bg-black" />;
-  }
-
   if (!splashFinished) {
     return <SplashText text="VOOS Estética" onFinish={finishSplash} />;
   }
@@ -22,6 +18,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <main className="flex-grow">{children}</main>
       <Footer />
       <WhatsAppBot />
+
+      {!splashFinished && splashFinished !== null && (
+        <SplashText text="VOOS Estética" onFinish={finishSplash} />
+      )}
     </div>
   );
 }

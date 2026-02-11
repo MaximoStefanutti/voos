@@ -6,14 +6,12 @@ import { AppUIContextProps } from "./type";
 const AppUIContext = createContext<AppUIContextProps | null>(null);
 
 export function AppUIProvider({ children }: { children: React.ReactNode }) {
-  const [splashFinished, setsplashFinished] = useState<boolean | null>(null);
+  const [splashFinished, setsplashFinished] = useState(false);
 
   useEffect(() => {
     const hasSeenSplash = sessionStorage.getItem("voos_splash_seen");
     if (hasSeenSplash) {
-      setsplashFinished(true);
-    } else {
-      setsplashFinished(false);
+      setsplashFinished;
     }
   }, []);
 

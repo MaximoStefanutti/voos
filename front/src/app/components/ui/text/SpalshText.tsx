@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import GradientText from "./GradientText";
 import { useAppUI } from "@/app/context/AppUIContext";
 

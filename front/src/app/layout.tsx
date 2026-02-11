@@ -4,7 +4,6 @@ import { AppUIProvider } from "./context/AppUIContext";
 import { Analytics } from "@vercel/analytics/next";
 import LocalBusinessSchema from "./components/seo/LocalBusinessSchema";
 import FaqSchema from "./components/seo/FaqSchema";
-import { url } from "inspector";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://voos-eight.vercel.app/"),
@@ -23,14 +22,14 @@ export const metadata: Metadata = {
     title: "VOOS Estética Integral | Córdoba",
     description:
       "Tratamientos faciales y corporales personalizados en Córdoba Capital. Bienestar, estética y cuidado integral.",
-    images: [
-      {
-        url: "logo.svg",
-        width: 1200,
-        height: 630,
-        alt: "VOOS Estética Integral - Centro de Estética en Córdoba",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "logo.svg",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "VOOS Estética Integral - Centro de Estética en Córdoba",
+    //   },
+    // ],
   },
 
   twitter: {

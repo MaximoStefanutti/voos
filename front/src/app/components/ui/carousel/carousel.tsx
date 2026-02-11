@@ -1,5 +1,3 @@
-"use client";
-
 import { env } from "@/app/config/env";
 import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
