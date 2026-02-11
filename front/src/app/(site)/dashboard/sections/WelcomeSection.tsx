@@ -1,5 +1,3 @@
-"use client";
-
 import FeatureCard from "@/app/components/ui/featurecards/FeatureCard";
 import { Favorite, Spa, Star } from "@mui/icons-material";
 
@@ -17,7 +15,7 @@ export default function WelcomeSection() {
           personalizada.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 max-w-5x1 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
           <FeatureCard
             icon={<Spa sx={{ fontSize: 32, color: "#f0d4a8" }} />}
             title="Bienestar Interior"

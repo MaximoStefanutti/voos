@@ -1,6 +1,9 @@
+"use client";
+
 import { env } from "@/app/config/env";
 import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 type Slide = {
@@ -14,17 +17,17 @@ export function Carousel() {
 
   const slides: Slide[] = [
     {
-      image: "fondo.png",
+      image: "hero.webp",
       title: "VOOS",
       description: "Tu mejor versión",
     },
     {
-      image: "masajes-con-piedras-calientes.png",
+      image: "masajes-piedras-calientes.webp",
       title: "Bienestar y Armonía",
       description: "Descubre nuestros tratamientos holísticos",
     },
     {
-      image: "masajes.png",
+      image: "masajes.webp",
       title: "Promoción Especial",
       description: "20% de descuento en tu primer masaje",
     },
@@ -49,7 +52,7 @@ export function Carousel() {
   );
 
   return (
-    <div className="relative h-[70vh] md:h[80vh] overflow-hidden">
+    <div className="relative h-[70vh] md:h-[80vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -57,12 +60,21 @@ export function Carousel() {
             index === currentSlide ? "opacity-100 z-10" : "opacity-0 1-0"
           }`}
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          >
+          {/*Imagen Optimizada */}
+          <div className="absolute inset-0 bg-cover bg-center">
+            <Image
+              src={`/${slide.image}`}
+              alt={slide.title}
+              fill
+              priority={index === 0}
+              sizes="100vm"
+              className="object-cover"
+            />
+            {/*Overlay Oscuro */}
             <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
           </div>
+
+          {/*Contenido */}
           <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6">
             <h2 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-wide text-white mb-4">
               {slide.title}

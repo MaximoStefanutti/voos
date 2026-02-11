@@ -12,7 +12,7 @@ export const featuredServices: ServiceProps[] = [
     description:
       "Un masaje suave para aliviar el estrés y la tensión muscular.",
 
-    image: "masajes.png",
+    image: "masajes.webp",
   },
 
   {
@@ -20,13 +20,13 @@ export const featuredServices: ServiceProps[] = [
     name: "Reiki",
     description:
       "Terapia energética que promueve la relajación y el equilibrio emocional.",
-    image: "reiki.jpg",
+    image: "reiki.webp",
   },
 
   {
     id: 3,
     name: "Facial Rejuvenecedor",
     description: "Reduce líneas finas y mejora la elasticidad de la piel.",
-    image: "facial.jpg",
+    image: "facial.webp",
   },
 ];

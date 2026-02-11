@@ -20,14 +20,14 @@ export const services: ServiceProps[] = [
     description:
       "Un masaje suave para aliviar el estrés y la tensión muscular.",
     category: "masajes",
-    image: "masajes.png",
+    image: "masajes.webp",
   },
   {
     id: 2,
     name: "Facial Rejuvenecedor",
     description: "Tratamiento facial que hidrata y revitaliza la piel.",
     category: "facial",
-    image: "facial.jpg",
+    image: "facial.webp",
   },
 
   {
@@ -35,14 +35,14 @@ export const services: ServiceProps[] = [
     name: "Manicura y Pedicura",
     description: "Cuidado completo de manos y pies con esmalte premium.",
     category: "corporal",
-    image: "manicura.jpg",
+    image: "manicura.webp",
   },
   {
     id: 4,
     name: "Depilación Definitiva",
     description: "Elimina el vello no deseado. Resultados duraderos.",
     category: "depilación",
-    image: "depilación.jpg",
+    image: "depilación.webp",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ export const services: ServiceProps[] = [
     description:
       "Reafirma y tensa la piel del abdomen, brazos, glúteos y piernas sin cirugía.",
     category: "corporal",
-    image: "hifu-corporal.jpg",
+    image: "hifu-corporal.webp",
   },
   {
     id: 6,
@@ -58,14 +58,14 @@ export const services: ServiceProps[] = [
     description:
       "Rejuvenece la piel desde capas profundas con un efecto lifting sin cirugía.",
     category: "facial",
-    image: "hifu.jpg",
+    image: "hifu.webp",
   },
   {
     id: 7,
     name: "Vela terapia",
     description: "Reducción de Celulitis y Moldeo Corporal sin Cirugía.",
     category: "corporal",
-    image: "vela.jpg",
+    image: "vela.webp",
   },
   {
     id: 8,
@@ -73,7 +73,7 @@ export const services: ServiceProps[] = [
     description:
       "Estimula el colágeno, mejora arrugas, textura y firmeza del rostro sin dañar la superficie cutánea.",
     category: "facial",
-    image: "radiofrecuencia.jpg",
+    image: "radiofrecuencia.webp",
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ export const services: ServiceProps[] = [
     description:
       "Drenaje linfático mecánico que mejora la circulación, elimina líquidos y ayuda a combatir la celulitis.",
     category: "corporal",
-    image: "presoterapia.jpg",
+    image: "presoterapia.webp",
   },
   {
     id: 10,
@@ -89,14 +89,14 @@ export const services: ServiceProps[] = [
     description:
       "Ultrasonido focalizado de alta intensidad para eliminar grasa localizada y definir el contorno corporal.",
     category: "corporal",
-    image: "liposonix.jpg",
+    image: "liposonix.webp",
   },
   {
     id: 11,
     name: " Diseño de Cejas y Realce de Pestañas",
     description: "Diseño y cuidado de cejas y pestañas.",
     category: "facial",
-    image: "cejas.jpg",
+    image: "cejas.webp",
   },
 
   {
@@ -105,7 +105,7 @@ export const services: ServiceProps[] = [
     description:
       "Tratamiento de tererapia energétiva para equilibrar el cuerpo y la mente.",
     category: "terapia energética",
-    image: "pendulo.jpg",
+    image: "pendulo.webp",
   },
 
   {
@@ -114,7 +114,7 @@ export const services: ServiceProps[] = [
     description:
       "Tratamiento para reducir arrugas faciales mediante inyecciones de toxina botulínica.",
     category: "facial",
-    image: "botox.jpg",
+    image: "botox.webp",
   },
 
   {
@@ -123,7 +123,7 @@ export const services: ServiceProps[] = [
     description:
       "Terapia energética que promueve la relajación y el equilibrio emocional a través de la imposición de manos.",
     category: "terapia energética",
-    image: "reiki.jpg",
+    image: "reiki.webp",
   },
 
   {
@@ -132,7 +132,7 @@ export const services: ServiceProps[] = [
     description:
       "Técnica de masaje que utiliza herramientas de madera para estimular la circulación y tonificar el cuerpo.",
     category: "masajes",
-    image: "maderoterapia.jpg",
+    image: "maderoterapia.webp",
   },
 
   {
@@ -141,6 +141,6 @@ export const services: ServiceProps[] = [
     description:
       "Limpieza profunda para eliminar impurezas y revitalizar la piel del rostro.",
     category: "facial",
-    image: "limpieza-facial.jpg",
+    image: "limpieza-facial.webp",
   },
 ];
