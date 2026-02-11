@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     title: "VOOS Estética Integral | Córdoba",
     description:
       "Tratamientos faciales y corporales personalizados en Córdoba Capital. Bienestar, estética y cuidado integral.",
+    images: [
+      {
+        url: "logo.svg",
+        width: 1200,
+        height: 630,
+        alt: "VOOS Estética Integral - Centro de Estética en Córdoba",
+      },
+    ],
   },
 
   twitter: {
