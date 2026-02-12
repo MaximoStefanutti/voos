@@ -17,19 +17,22 @@ export default function WelcomeSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
           <FeatureCard
+            as="h2"
             icon={<Spa sx={{ fontSize: 32, color: "#f0d4a8" }} />}
             title="Bienestar Interior"
             description="Cuidamos el equilibrio entre cuerpo y mente."
           />
           <FeatureCard
+            as="h2"
             icon={<Star sx={{ fontSize: 32, color: "#f0d4a8" }} />}
             title="Tecnología Avanzada"
-            description="Equipos de ultima generación."
+            description="Equipos de última generación."
           />
           <FeatureCard
+            as="h2"
             icon={<Favorite sx={{ fontSize: 32, color: "#f0d4a8" }} />}
             title="Atención personalizada"
-            description="Enfoque personalizado para que te lleves una gran experienca."
+            description="Enfoque personalizado para que te lleves una gran experiencia."
           />
         </div>
       </div>

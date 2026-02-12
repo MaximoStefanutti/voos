@@ -119,7 +119,7 @@ export function Carousel() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`h-2 w-2 rounded-full transition-colors ${
+            className={`h-5 w-5 rounded-full transition-colors ${
               index === currentSlide ? "bg-[#f0d4a8]" : "bg-white/50"
             }`}
             aria-label="indicación de paginación"

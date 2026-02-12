@@ -1,3 +1,4 @@
+import { desc } from "framer-motion/client";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,14 +10,30 @@ export const metadata: Metadata = {
   description:
     "VOOS Estética es un centro de estética en Córdoba Capital especializado en tratamientos faciales, corporales y bienestar holístico con atención personalizada y profesionales calificados.",
 
+  keywords: [
+    "centro de estética en Córdoba",
+    "tratamientos faciales Córdoba",
+    "tratamientos corporales Córdoba",
+    "estética integral Córdoba",
+  ],
+
+  authors: [{ name: "VOOS Estética Integral" }],
+  creator: "VOOS Estética Integral",
+  publisher: "VOOS Estética Integral",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "voosestetica.com.ar",
+    url: "https://voosestetica.com.ar",
     siteName: "VOOS Estética Integral",
-    title: "VOOS Estética Integral | Córdoba",
+    title: "VOOS Estética Integral | Centro de estética en Córdoba",
     description:
-      "Tratamientos faciales y corporales personalizados en Córdoba Capital. Bienestar, estética y cuidado integral.",
+      "Estética holística que combina técnicas ancestrales con tecnología moderna para tu bienestar integral en Córdoba Capital.",
     images: [
       {
         url: "og-image.webp",
@@ -26,17 +43,11 @@ export const metadata: Metadata = {
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
     title: "VOOS Estética Integral | Córdoba",
     description:
       "VOOS Estética es un centro de estética en Córdoba Capital especializado en tratamientos faciales, corporales y bienestar holístico",
     images: ["/og-image.webp"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
   },
 };

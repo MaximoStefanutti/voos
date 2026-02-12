@@ -12,6 +12,8 @@ export default function MapEmbed({ className = "" }: MapEmbedProps) {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         className={`w-full h-full border-0 grayscale brigthness-90 contrast-110 ${className}`}
+        title="Ubucación de VOOS Estética integral en Córdoba Capital"
+        aria-label="Mapa con la ubicación de VOOS Estética Integral en Córdoba Capítal"
       />
     </div>
   );

@@ -2,7 +2,7 @@ interface FeatureCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
-  as?: "h3" | "h4";
+  as?: "h2" | "h3" | "h4";
 }
 
 export default function FeatureCard({

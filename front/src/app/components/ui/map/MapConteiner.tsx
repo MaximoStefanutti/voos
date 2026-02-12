@@ -32,6 +32,8 @@ export function MapContainer({
         text-[11px] text-white
         px-3 py-1 rounded-full
         hover:bg-black transition"
+        title="Ubucación de VOOS Estética integral en Córdoba Capital"
+        aria-label="Mapa con la ubicación de VOOS Estética Integral en Córdoba Capítal"
       >
         Abrir en Maps
       </a>
