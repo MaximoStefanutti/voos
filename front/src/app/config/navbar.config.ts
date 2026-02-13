@@ -7,9 +7,9 @@ export interface NavLink {
 export const NavLinks: NavLink[] = [
   { href: "/", label: "Inicio" },
   {
-    href: "/about",
+    href: "/sobre-nosotras",
     label: "Sobre nosotras",
     ariaLabel: "Centro de estética en Córdoba Capital",
   },
-  { href: "/treatment", label: "Tratamientos estéticos" },
+  { href: "/tratamientos", label: "Tratamientos estéticos" },
 ];

@@ -3,22 +3,32 @@ import { CarouselSection } from "./sections/CarouselSection";
 import FeaturedServicesSection from "./sections/FeaturedServicesSection";
 import PromoSection from "./sections/PromoSection";
 import WelcomeSection from "./sections/WelcomeSection";
+import FaqSchema from "@/app/components/seo/FaqSchema";
+import FaqSection from "./sections/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Centro de estética en Córdoba | VOOS Estética integral",
+  title:
+    "Centro de estética en Córdoba | Masajes, HIFU y Tratamientos Faciales",
   description:
-    "VOOS Estética es un centro de estética en Córdoba Capital especializado en tratamientos faciales, corporales y bienestar integral. Atención personalizada y profesionales calificados.",
+    "Centro de estética en Córdoba Capital especializado en masajes relajantes, HIFU, radiofrecuencia, depilación definitiva y tratamientos faciales y corporales. Reservá tu turno por WhatsApp.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "VOOS Estética Integral | Centro de estética en Córdoba",
+    title: "Centro de estética en Córdoba | VOOS Estética Integral ",
     description:
-      "Descubrí tratamientos faciales, corporales y bienestar integral con atención personalizada en Córdoba.",
+      "Masajes, HIFU, radiofrecuenia y tratamientos faciales en Córdoba Capital. Atención personalizada y turnos online.",
     url: "/",
-    siteName: "VOOS Estética Integral",
-    locale: "es_AR",
     type: "website",
+    locale: "es_AR",
+    images: [
+      {
+        url: "/og-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "Centro de Estética VOOS en Córdoba Capital",
+      },
+    ],
   },
 };
 
@@ -29,6 +39,8 @@ export default function DashboardPage() {
       <WelcomeSection />
       <FeaturedServicesSection />
       <PromoSection />
+      <FaqSection />
+      <FaqSchema />
     </>
   );
 }

@@ -20,7 +20,7 @@ export function NavBar() {
         {/* LOGO */}
         <Link href="/" className="relative w-44 h-16">
           <Image
-            src="/logo-blanco-50.png"
+            src="/image/logo/logo-blanco-50.png"
             alt="VOOS Estética Integral en Córdoba Capital"
             fill
             className="object-contain"

@@ -11,7 +11,7 @@ export default function FeaturedServicesSection() {
         <h2 className="text-3xl md:text-3xl text-center font-light text-white mb-1">
           Nuestros Tratamientos Destacados
         </h2>
-        <p className="text-[#f0d4a8] text-center text-base md:text-lg max-w-x1 mx-auto mb-8">
+        <p className="text-[#f0d4a8] text-center text-base md:text-lg max-w-xl mx-auto mb-8">
           Tratamientos faciales, corporales y de bienestar realizados por
           profesionales en estética en Córdoba Capital
         </p>
@@ -24,7 +24,7 @@ export default function FeaturedServicesSection() {
 
         <div className="text-center mt-10">
           <Link
-            href="/treatment"
+            href="/tratamientos"
             className="px-8 py-3 bg-[#0a3635] text-[#f0d4a8] rounded-full hover:bg-[#0a3635]/80"
           >
             Ver todos

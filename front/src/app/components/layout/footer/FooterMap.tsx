@@ -1,6 +1,6 @@
 "use client";
 
-import RevealOnSroll from "../../ui/animation/RevealOnScroll";
+import RevealOnScroll from "../../ui/animation/RevealOnScroll";
 import { MapContainer } from "../../ui/map/MapConteiner";
 
 export default function FooterMap() {
@@ -18,9 +18,9 @@ export default function FooterMap() {
       border border-white/10
       poiter-events-none"
       >
-        <RevealOnSroll>
+        <RevealOnScroll>
           <MapContainer />
-        </RevealOnSroll>
+        </RevealOnScroll>
       </div>
     </div>
   );

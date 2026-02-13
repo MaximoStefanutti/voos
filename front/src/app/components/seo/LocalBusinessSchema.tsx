@@ -1,14 +1,14 @@
 export default function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
+    "@type": ["HealthAndBeautyBusiness", "BeautySalon"],
     "@id": "https://voosestetica.com.ar/#business",
     name: "VOOS Estética Integral",
     url: "https://voosestetica.com.ar",
     logo: "https://voosestetica.com.ar/logo-blanco.png",
     image: "https://voosestetica.com.ar/og-image.webp",
     description:
-      "Centro de estética integral en Córdoba Capital especializado en tratamientos faciales, corporales y bienestar holístico",
+      "Centro de estética en Córdoba Cappital especializado en masajes relajantes, HIFUU, radiofrecuencia, depilación definitiva y tartamientos faciales y corporales",
     telephone: "+5493515128427",
     address: {
       "@type": "PostalAddress",
@@ -26,14 +26,13 @@ export default function LocalBusinessSchema() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "20:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeef: "Saturday",
         opens: "09:00",
         closes: "20:00",
       },
@@ -50,6 +49,41 @@ export default function LocalBusinessSchema() {
       "https://www.instagram.com/voosestetica",
       "https://wa.me/5493515128427",
     ],
+
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Tratamientos Estéticos",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOfferd: {
+            type: "Service",
+            name: "Hifu Facial y Corporal",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOfferd: {
+            type: "Service",
+            name: "Masajes Realajantes",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOfferd: {
+            type: "Service",
+            name: "RadioFrecuencia",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOfferd: {
+            type: "Service",
+            name: "Depilación DDefinitiva",
+          },
+        },
+      ],
+    },
     priceRange: "$$",
   };
 

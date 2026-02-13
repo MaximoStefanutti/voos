@@ -6,12 +6,14 @@ type RevelOnScrollProps = {
   children: React.ReactNode;
   className?: string;
   delay?: number;
+  direction?: "left" | "right" | "up" | "down";
 };
 
-export default function RevealOnSroll({
+export default function RevealOnScroll({
   children,
   className = "",
   delay = 0,
+  direction = "up",
 }: RevelOnScrollProps) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setvisible] = useState(false);
@@ -33,12 +35,24 @@ export default function RevealOnSroll({
     return () => observer.disconnect();
   }, []);
 
+  const baseStyles = "transition-all duration-700 ease-out";
+
+  const hiddenStyles = {
+    left: "opacity-0 -translate-x-10",
+    right: "opacity-0 translate-x-10",
+    up: "opacity-0 transate-y-10",
+    down: "opacity-0 -transalte-y-10",
+  };
+
+  const visibleStyles = "opacity-100 transalte-x-0 translate-y-0";
+
   return (
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-700 ease-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 transalte-y-8"}
-      ${className}`}
+      className={`${baseStyles} ${
+        visible ? visibleStyles : hiddenStyles[direction]
+      } ${className}`}
     >
       {children}
     </div>

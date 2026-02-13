@@ -17,19 +17,20 @@ export function Carousel() {
 
   const slides: Slide[] = [
     {
-      image: "hero.webp",
+      image: "image/carousel/hero.webp",
       title: "VOOS",
       description: "Tu mejor versión",
     },
     {
-      image: "masajes-piedras-calientes.webp",
-      title: "Bienestar y Armonía",
-      description: "Descubre nuestros tratamientos holísticos",
+      image: "image/carousel/hifu-promo-hero.webp",
+      title: "Promoción Especial",
+      description:
+        "💘 Día de los Enamorados. Regala rejuvenecimiento 2x1 en HIFU Facial",
     },
     {
-      image: "masajes.webp",
-      title: "Promoción Especial",
-      description: "20% de descuento en tu primer masaje",
+      image: "image/carousel/masajes-hero.webp",
+      title: "Bienestar y Armonía",
+      description: "Descubre nuestros tratamientos holísticos",
     },
   ];
 
@@ -80,10 +81,10 @@ export function Carousel() {
             <h2 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-wide text-white mb-4">
               {slide.title}
             </h2>
-            <p className="text-lg md:text-x1 lg:text-2x1 text-[#f0d4a8] max-w-2x1">
+            <p className="text-lg md:text-xl lg:text-2x1 text-[#f0d4a8] max-w-2x1">
               {slide.description}
             </p>
-            {index === 2 && (
+            {index === 1 && (
               <a
                 href={whastappLink}
                 target="_blank"

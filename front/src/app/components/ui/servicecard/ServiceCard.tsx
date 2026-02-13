@@ -3,6 +3,7 @@
 import { getWhatsAppLink } from "@/app/helpers/whatsapp/whatsapp";
 import { WhatsApp } from "@mui/icons-material";
 import { env } from "@/app/config/env";
+import Image from "next/image";
 
 interface ServiceProps {
   name: string;
@@ -29,9 +30,11 @@ export default function ServiceCard({
   return (
     <article className="bg-black/20 backdrop-blur-sm rounded-xl overflow-hidden group">
       <div className="h-60 overflow-hidden relative">
-        <img
-          src={image}
-          alt={name}
+        <Image
+          src={`/${image}`}
+          alt={`Tratamiento ${name} en Córdoba Capital`}
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
 

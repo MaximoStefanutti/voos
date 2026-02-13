@@ -12,7 +12,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
           <div className="lg:col-span1">
             <Image
-              src="/logo-blanco.png"
+              src="/image/logo/logo-blanco.png"
               alt="VOOS Estética integral en Córdoba Capital"
               width={140}
               height={60}

@@ -13,16 +13,16 @@ export interface FooterLink {
 }
 
 export const footerServices = [
-  { href: "/treatment?category=facial", label: "Tratamientos Faciales" },
-  { href: "/treatment?category=corporal", label: "Tratamientos Corporales" },
-  { href: "/treatment?category=depilación", label: "Depilación definitiva" },
-  { href: "/treatment?category=masajes", label: "Masajes" },
+  { href: "/tratamientos?category=facial", label: "Tratamientos Faciales" },
+  { href: "/tratamientos?category=corporal", label: "Tratamientos Corporales" },
+  { href: "/tratamientos?category=depilación", label: "Depilación definitiva" },
+  { href: "/tratamientos?category=masajes", label: "Masajes" },
 ];
 
 export const footerLinks = [
   { href: "/", label: "Inicio" },
-  { href: "/about", label: "Nosotras" },
-  { href: "/treatment", label: "Tratamientos" },
+  { href: "/sobre-nosotras", label: "Nosotras" },
+  { href: "/tratamientos", label: "Tratamientos" },
 ];
 
 export const footerContact = [

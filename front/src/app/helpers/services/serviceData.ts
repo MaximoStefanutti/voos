@@ -20,14 +20,14 @@ export const services: ServiceProps[] = [
     description:
       "Un masaje suave para aliviar el estrés y la tensión muscular.",
     category: "masajes",
-    image: "masajes.webp",
+    image: "image/tratamientos/masajes.webp",
   },
   {
     id: 2,
     name: "Facial Rejuvenecedor",
     description: "Tratamiento facial que hidrata y revitaliza la piel.",
     category: "facial",
-    image: "facial.webp",
+    image: "image/tratamientos/facial.webp",
   },
 
   {
@@ -35,14 +35,14 @@ export const services: ServiceProps[] = [
     name: "Manicura y Pedicura",
     description: "Cuidado completo de manos y pies con esmalte premium.",
     category: "corporal",
-    image: "manicura.webp",
+    image: "image/tratamientos/manicura.webp",
   },
   {
     id: 4,
     name: "Depilación Definitiva",
     description: "Elimina el vello no deseado. Resultados duraderos.",
     category: "depilación",
-    image: "depilación.webp",
+    image: "image/tratamientos/depilación.webp",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ export const services: ServiceProps[] = [
     description:
       "Reafirma y tensa la piel del abdomen, brazos, glúteos y piernas sin cirugía.",
     category: "corporal",
-    image: "hifu-corporal.webp",
+    image: "image/tratamientos/hifu-corporal.webp",
   },
   {
     id: 6,
@@ -58,14 +58,14 @@ export const services: ServiceProps[] = [
     description:
       "Rejuvenece la piel desde capas profundas con un efecto lifting sin cirugía.",
     category: "facial",
-    image: "hifu.webp",
+    image: "image/tratamientos/hifu.webp",
   },
   {
     id: 7,
     name: "Vela terapia",
     description: "Reducción de Celulitis y Moldeo Corporal sin Cirugía.",
     category: "corporal",
-    image: "vela.webp",
+    image: "image/tratamientos/vela.webp",
   },
   {
     id: 8,
@@ -73,7 +73,7 @@ export const services: ServiceProps[] = [
     description:
       "Estimula el colágeno, mejora arrugas, textura y firmeza del rostro sin dañar la superficie cutánea.",
     category: "facial",
-    image: "radiofrecuencia.webp",
+    image: "image/tratamientos/radiofrecuencia.webp",
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ export const services: ServiceProps[] = [
     description:
       "Drenaje linfático mecánico que mejora la circulación, elimina líquidos y ayuda a combatir la celulitis.",
     category: "corporal",
-    image: "presoterapia.webp",
+    image: "image/tratamientos/presoterapia.webp",
   },
   {
     id: 10,
@@ -89,14 +89,14 @@ export const services: ServiceProps[] = [
     description:
       "Ultrasonido focalizado de alta intensidad para eliminar grasa localizada y definir el contorno corporal.",
     category: "corporal",
-    image: "liposonix.webp",
+    image: "image/tratamientos/liposonix.webp",
   },
   {
     id: 11,
     name: " Diseño de Cejas y Realce de Pestañas",
     description: "Diseño y cuidado de cejas y pestañas.",
     category: "facial",
-    image: "cejas.webp",
+    image: "image/tratamientos/cejas.webp",
   },
 
   {
@@ -105,7 +105,7 @@ export const services: ServiceProps[] = [
     description:
       "Tratamiento de tererapia energétiva para equilibrar el cuerpo y la mente.",
     category: "terapia energética",
-    image: "pendulo.webp",
+    image: "image/tratamientos/pendulo.webp",
   },
 
   {
@@ -114,7 +114,7 @@ export const services: ServiceProps[] = [
     description:
       "Tratamiento para reducir arrugas faciales mediante inyecciones de toxina botulínica.",
     category: "facial",
-    image: "botox.webp",
+    image: "image/tratamientos/botox.webp",
   },
 
   {
@@ -123,7 +123,7 @@ export const services: ServiceProps[] = [
     description:
       "Terapia energética que promueve la relajación y el equilibrio emocional a través de la imposición de manos.",
     category: "terapia energética",
-    image: "reiki.webp",
+    image: "image/tratamientos/reiki.webp",
   },
 
   {
@@ -132,7 +132,7 @@ export const services: ServiceProps[] = [
     description:
       "Técnica de masaje que utiliza herramientas de madera para estimular la circulación y tonificar el cuerpo.",
     category: "masajes",
-    image: "maderoterapia.webp",
+    image: "image/tratamientos/maderoterapia.webp",
   },
 
   {
@@ -141,6 +141,6 @@ export const services: ServiceProps[] = [
     description:
       "Limpieza profunda para eliminar impurezas y revitalizar la piel del rostro.",
     category: "facial",
-    image: "limpieza-facial.webp",
+    image: "image/tratamientos/limpieza-facial.webp",
   },
 ];
