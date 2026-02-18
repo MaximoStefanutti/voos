@@ -12,7 +12,7 @@ export default function ContactSection() {
   );
 
   return (
-    <div className="text-center">
+    <section className="text-center">
       <h2 className="text-3xl text-white mb-4">Visítanos</h2>
       <p className="text-[#f0d4a8] mb-8">
         Te esperamos para comenzar tu viaje hacia tu mejor versión.
@@ -38,6 +38,6 @@ export default function ContactSection() {
           <MapEmbed />
         </RevealOnScroll>
       </div>
-    </div>
+    </section>
   );
 }

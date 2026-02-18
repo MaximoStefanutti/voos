@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutContent() {
   return (
-    <div className="pt-24 pb-16">
+    <section className="pt-24 pb-16">
       <div className="container mx-auto px-6">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-light text-white mb-2">
@@ -102,6 +102,6 @@ export default function AboutContent() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
