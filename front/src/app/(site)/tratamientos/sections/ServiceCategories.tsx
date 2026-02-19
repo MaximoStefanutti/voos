@@ -1,14 +1,18 @@
 "use client";
 
-interface Category {
-  id: string;
+import { ServiceCategory } from "@/app/lib/services/types";
+
+type FilterCategory = "todos" | ServiceCategory;
+
+export interface Category {
+  id: FilterCategory;
   name: string;
 }
 
 interface Props {
   categories: Category[];
   activeCategory: string;
-  onChange: (category: string) => void;
+  onChange: (category: FilterCategory) => void;
 }
 
 export default function ServicesCategories({

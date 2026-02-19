@@ -2,18 +2,30 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
+
 import ServicesHeader from "./ServicesHeader";
-import ServicesCategories from "./ServiceCategories";
+import ServicesCategories, { Category } from "./ServiceCategories";
 import ServicesGrid from "./ServiceGrid";
+
 import { useIsDesktop } from "@/app/hook/useIsDesktop";
-import { services } from "@/app/helpers/services/serviceData";
+
+import { ServiceCategory } from "@/app/lib/services/types";
+import {
+  formatCategoryLabel,
+  getAllServices,
+  getServiceCategories,
+  getServicesByCategory,
+} from "@/app/lib/services/helpers";
+
+type FilterCategory = "todos" | ServiceCategory;
 
 export default function ServicesSection() {
   const searchParams = useSearchParams();
-  const categoryFromURl = searchParams.get("category");
-  const [activeCategory, setActiveCategory] = useState(
+  const categoryFromURl = searchParams.get("category") as FilterCategory | null;
+  const [activeCategory, setActiveCategory] = useState<FilterCategory>(
     categoryFromURl ?? "todos",
   );
+
   const isDesktop = useIsDesktop();
 
   //sincroniza la URL con el estado.
@@ -23,24 +35,25 @@ export default function ServicesSection() {
     }
   }, [categoryFromURl]);
 
-  const categories = useMemo(() => {
-    const uniqueCategories = Array.from(
-      new Set(services.map((service) => service.category)),
-    );
+  const categories: Category[] = useMemo(() => {
+    const domainCategories = getServiceCategories();
 
     return [
       { id: "todos", name: "Todos" },
-      ...uniqueCategories.map((cat) => ({
+      ...domainCategories.map((cat) => ({
         id: cat,
-        name: cat.charAt(0).toUpperCase() + cat.slice(1),
+        name: formatCategoryLabel(cat),
       })),
     ];
   }, []);
 
-  const filteredServices =
-    activeCategory === "todos"
-      ? services
-      : services.filter((service) => service.category === activeCategory);
+  const filteredServices = useMemo(() => {
+    if (activeCategory === "todos") {
+      return getAllServices();
+    }
+
+    return getServicesByCategory(activeCategory);
+  }, [activeCategory]);
 
   return (
     <section className="pt-24 pb-16">
