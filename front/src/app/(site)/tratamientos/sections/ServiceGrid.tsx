@@ -2,21 +2,23 @@
 
 import RevealOnScroll from "@/app/components/ui/animation/RevealOnScroll";
 import ServiceCard from "@/app/components/ui/servicecard/ServiceCard";
-import { ServiceProps } from "@/app/helpers/services/featuredServices";
+import { useIsDesktop } from "@/app/hook/useIsDesktop";
+import { Service } from "@/app/lib/services/types";
 
 interface Props {
-  service: ServiceProps[];
-  enableAnimations: boolean;
+  service: Service[];
 }
 
-export default function ServicesGrid({ service, enableAnimations }: Props) {
+export default function ServicesGrid({ service }: Props) {
+  const isDesktop = useIsDesktop();
+
   const AnimatedService = 5;
   const startAnimation = Math.max(service.length - AnimatedService, 0);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:gird-cols-2 lg:grid-cols-3 gap-8">
       {service.map((item, index) => {
-        const shouldAnimate = enableAnimations && index >= startAnimation;
+        const shouldAnimate = isDesktop && index >= startAnimation;
 
         return shouldAnimate ? (
           <RevealOnScroll key={item.id} delay={(index - startAnimation) * 0.1}>
