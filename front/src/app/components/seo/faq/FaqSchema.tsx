@@ -1,10 +1,16 @@
-import { faqData } from "@/app/data/faq/faq";
+import { FaqItem } from "../../../../types/faq/faq";
 
-export default function FaqSchema() {
+interface Props {
+  faqs: FaqItem[];
+}
+
+export default function FaqSchema({ faqs }: Props) {
+  if (!faqs || faqs.length === 0) return null;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqData.map((faq) => ({
+    mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {

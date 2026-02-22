@@ -1,35 +1,25 @@
-import { ServiceCategory } from "@/app/lib/services/types";
+import { Category, FilterCategory } from "@/app/lib/services/serviceCategories";
 import Link from "next/link";
-
-type FilterCategory = "todos" | ServiceCategory;
-
-export interface Category {
-  id: FilterCategory;
-  name: string;
-}
 
 interface Props {
   categories: Category[];
-  curretCategory?: FilterCategory;
+  currentCategory?: FilterCategory;
 }
 
 export default function ServicesCategories({
   categories,
-  curretCategory,
+  currentCategory,
 }: Props) {
   return (
-    <nav>
-      <div
-        className="flex flex-wrap justify-center mb-12"
-        aria-label="Categorías de tratamientos"
-      >
+    <nav aria-label="Categorías de tratamientos">
+      <div className="flex flex-wrap justify-center mb-12">
         {categories.map((category) => {
           const href =
             category.id === "todos"
               ? "/tratamientos"
               : `/tratamientos/${category.id}`;
 
-          const isActive = curretCategory === category.id;
+          const isActive = currentCategory === category.id;
 
           return (
             <Link

@@ -1,17 +1,23 @@
 "use client";
 
 import RevealOnScroll from "@/app/components/ui/animation/RevealOnScroll";
-import { faqData } from "@/app/data/faq/faq";
+import { FaqItem } from "../../../../types/faq/faq";
 import { ExpandMore } from "@mui/icons-material";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
-export default function FaqSection() {
+interface Props {
+  faqs: FaqItem[];
+}
+
+export default function HomeFaqSection({ faqs }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  if (!faqs || faqs.length === 0) return null;
 
   return (
     <section className="relative py-24 px-6 bg-[#0a3635]/30 overflow-hidden">
@@ -24,7 +30,7 @@ export default function FaqSection() {
               Preguntas frecuentes
             </h2>
             <p className="text-[#f0d4a8] mt-4 max-w-2xl mx-auto text-sm md:text-base">
-              Información clara y trasparente para que vivas tu experiencia en
+              Información clara y transparente para que vivas tu experiencia en
               VOOS Estética Integra con total confianza.
             </p>
           </div>
@@ -32,7 +38,7 @@ export default function FaqSection() {
 
         {/* lista FAQ */}
         <div className="space-y-6">
-          {faqData.map((faq, index) => {
+          {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 
             return (

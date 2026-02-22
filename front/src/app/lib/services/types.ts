@@ -1,4 +1,23 @@
-export type ServiceCategory =
+import { FaqItem } from "@/types/faq/faq";
+
+export interface Section {
+  title: string;
+  content: string;
+}
+
+export interface CategoryData {
+  seo: {
+    title: string;
+    description: string;
+  };
+  heroImage: string;
+  intro: string;
+  sections: Section[];
+  benefits: string[];
+  faqs?: FaqItem[];
+}
+
+export type CategoryKey =
   | "masajes"
   | "facial"
   | "corporal"
@@ -10,6 +29,8 @@ export interface Service {
   slug: string;
   name: string;
   description: string;
-  category: ServiceCategory;
+  category: CategoryKey;
   image: string;
 }
+
+export type CategoryContent = Record<CategoryKey, CategoryData>;

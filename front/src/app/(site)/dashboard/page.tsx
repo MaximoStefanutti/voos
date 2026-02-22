@@ -3,8 +3,9 @@ import { CarouselSection } from "./sections/CarouselSection";
 import FeaturedServicesSection from "./sections/FeaturedServicesSection";
 import PromoSection from "./sections/PromoSection";
 import WelcomeSection from "./sections/WelcomeSection";
-import FaqSchema from "@/app/components/seo/FaqSchema";
-import FaqSection from "./sections/FaqSection";
+import FaqSchema from "@/app/components/seo/faq/FaqSchema";
+import HomeFaqSection from "../../components/ui/faq/HomeFaqSection";
+import { faqData } from "../../../types/faq/homeFaq";
 
 export const metadata: Metadata = {
   title:
@@ -39,8 +40,8 @@ export default function DashboardPage() {
       <WelcomeSection />
       <FeaturedServicesSection />
       <PromoSection />
-      <FaqSection />
-      <FaqSchema />
+      <HomeFaqSection faqs={faqData} />
+      <FaqSchema faqs={faqData} />
     </>
   );
 }
