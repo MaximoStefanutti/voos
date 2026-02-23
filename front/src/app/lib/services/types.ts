@@ -18,9 +18,9 @@ export interface CategoryData {
 }
 
 export type CategoryKey =
-  | "masajes"
   | "facial"
   | "corporal"
+  | "masajes"
   | "depilacion"
   | "terapia-energetica";
 

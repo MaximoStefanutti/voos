@@ -8,7 +8,7 @@ export default function LocalBusinessSchema() {
     logo: "https://voosestetica.com.ar/logo-blanco.png",
     image: "https://voosestetica.com.ar/og-image.webp",
     description:
-      "Centro de estética en Córdoba Cappital especializado en masajes relajantes, HIFUU, radiofrecuencia, depilación definitiva y tartamientos faciales y corporales",
+      "Centro de estética en Córdoba Capital especializado en masajes relajantes, HIFU, radiofrecuencia, depilación definitiva y tratamientos faciales y corporales",
     telephone: "+5493515128427",
     address: {
       "@type": "PostalAddress",
@@ -32,7 +32,7 @@ export default function LocalBusinessSchema() {
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeef: "Saturday",
+        dayOfWeed: "Saturday",
         opens: "09:00",
         closes: "20:00",
       },
@@ -46,7 +46,7 @@ export default function LocalBusinessSchema() {
     hasMap: "https://www.google.com/maps/search/?api=1&query=-31.4393,-64.1258",
 
     sameAs: [
-      "https://www.instagram.com/voosestetica",
+      "https://www.instagram.com/voos_estetica",
       "https://wa.me/5493515128427",
     ],
 
@@ -56,30 +56,30 @@ export default function LocalBusinessSchema() {
       itemListElement: [
         {
           "@type": "Offer",
-          itemOfferd: {
-            type: "Service",
+          itemOffer: {
+            "@type": "Service",
             name: "Hifu Facial y Corporal",
           },
         },
         {
           "@type": "Offer",
-          itemOfferd: {
-            type: "Service",
-            name: "Masajes Realajantes",
+          itemOffer: {
+            "@type": "Service",
+            name: "Masajes Relajantes",
           },
         },
         {
           "@type": "Offer",
-          itemOfferd: {
-            type: "Service",
+          itemOffer: {
+            "@type": "Service",
             name: "RadioFrecuencia",
           },
         },
         {
           "@type": "Offer",
-          itemOfferd: {
-            type: "Service",
-            name: "Depilación DDefinitiva",
+          itemOffer: {
+            "@type": "Service",
+            name: "Depilación Definitiva",
           },
         },
       ],

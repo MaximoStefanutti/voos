@@ -12,7 +12,7 @@ export default function ServicesCategories({
 }: Props) {
   return (
     <nav aria-label="Categorías de tratamientos">
-      <div className="flex flex-wrap justify-center mb-12">
+      <div className="flex flex-wrap justify-center mb-12 gap-2">
         {categories.map((category) => {
           const href =
             category.id === "todos"

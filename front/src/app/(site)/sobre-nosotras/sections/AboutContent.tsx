@@ -9,12 +9,13 @@ export default function AboutContent() {
       <div className="container mx-auto px-6">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-light text-white mb-2">
-            Centro de estética en Córdoba
+            Centro de estética en Córdoba Capital | VOOS Estética
           </h1>
           <p className="text-[#f0d4a8]/80 text-lg">
             VOOS Estética es un centro de estética en Córdoba Capital
-            especializado en tratamientos faciales, corporales y bienestar
-            integral.
+            especializado en tratamientos faciales y corporales personalizados,
+            combinando tecnología avanzada, experiencia profesional y un enfoque
+            integral de bienestar.
           </p>
           <h2 className="sr-only">
             Tratamientos faciales y corporales en Córdoba Capital
@@ -24,25 +25,37 @@ export default function AboutContent() {
         {/* Historia y fotos */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
           <div>
-            <h2 className="text-3xl text-white mb-6">Nuestra Historia</h2>
-            <div className="space-y-4 text-gray-300">
+            <h2 className="text-3xl text-white mb-6">Nuestra Esencia</h2>
+            <div className="space-y-5 text-gray-300">
               <p>
-                VOOS Estética nace en Córdoba Capital de la pasión por el
-                bienestar integral y la belleza natural. Creamos un espacio
-                donde cada persona puede acceder a tratamientos facialies y
-                corporales personalizados, combinando tecnología moderna con
-                técnicas especializadas
+                VOOS Estética nace en Córdoba Capital como un espacio dedicado
+                al bienestar integral, la belleza consciente y el cuidado
+                personalizado. Creamos un centro de estética en Córdoba donde
+                cada detalle está pensnado para que vivas una experiencia
+                transformadora, combinando tecnología avanzada con técnicas
+                especializadas en tratamientos faciales y corporales.
               </p>
+
               <p>
-                Nuestro nombre, VOOS, representa el vuelo hacia una mejor
-                versión de uno mismo, un viaje de transformación y
-                descubrimiento personal que acompañamos con dedicación y
-                profesionalismo.
+                Nuestro nombre, VOOS, simboliza el impulso hacia una mejor
+                versión de vos misma/o. Representa ese momento en el que decidís
+                priorizarte reconectar con tu esencia y potenciar tu belleza
+                natural desde un enfoque profesional y humano.
               </p>
+
               <p>
-                Desde nuestros inicios, nos hemos comprometido con la excelencia
-                en cada tratamiento, creando experiencias personalizadas que
-                nutren tanto el cuerpo como el espíritu.
+                Nos especializamos en tratamientos faciales en Córdoba Capital,
+                tratamientos corporales personalizados y protocolos diseñados
+                para realzar tu belleza de manera armónica y natural. Cada
+                sesión es una experiencia única, creada para equilibrar cuerpo,
+                mente y emociones.
+              </p>
+
+              <p>
+                Desde nuestros inicios, trabajamos con compromiso, excelencia y
+                formación constante para ofrecer uno de los centros de estética
+                en Córdoba mas completos, cálidos y profesionales. Porque
+                creemos que cuidarte no es un lujo, es una decisión consciente.
               </p>
             </div>
           </div>
@@ -53,7 +66,7 @@ export default function AboutContent() {
                 alt="Centro de estética VOOS en Córdoba Capital"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="w-full h-auto object-contain"
+                className="object-contain"
               />
             </div>
           </div>

@@ -33,7 +33,7 @@ export const services: Service[] = [
     slug: "depilacion-definitiva",
     description: "Elimina el vello no deseado. Resultados duraderos.",
     category: "depilacion",
-    image: "image/tratamientos/depilación.webp",
+    image: "image/tratamientos/depilacion.webp",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const services: Service[] = [
   },
   {
     id: 6,
-    name: "HIFU",
+    name: "HIFU facial",
     slug: "hifu-facial",
     description:
       "Rejuvenece la piel desde capas profundas con un efecto lifting sin cirugía.",
@@ -81,7 +81,7 @@ export const services: Service[] = [
   },
   {
     id: 10,
-    name: " Liposonix",
+    name: "Liposonix",
     slug: "liposonix",
     description:
       "Ultrasonido focalizado de alta intensidad para eliminar grasa localizada y definir el contorno corporal.",
@@ -90,7 +90,7 @@ export const services: Service[] = [
   },
   {
     id: 11,
-    name: " Diseño de Cejas y Realce de Pestañas",
+    name: "Diseño de Cejas y Realce de Pestañas",
     slug: "diseño-cejas-pestanas",
     description: "Diseño y cuidado de cejas y pestañas.",
     category: "facial",

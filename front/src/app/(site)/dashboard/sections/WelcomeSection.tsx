@@ -6,12 +6,12 @@ export default function WelcomeSection() {
     <section className="py-16 px-6">
       <div className="container mx-auto">
         <h1 className="text-4xl md:text-5xl text-center font-light text-white mb-4">
-          Centro de estética en Córdoba Capital
+          Centro de Estética en Córdoba Capital
         </h1>
 
         <p className="text-[#f0d4a8] text-center text-base md:text-lg max-w-xl mx-auto">
-          VOOS Estética ofrece tratamientos faciales, corporales y bienestar
-          integral en Córdoba, combinando tecnología avanzada y atención
+          VOOS Estética ofrece tratamientos faciales, corporales y de bienestar
+          integral en Córdoba, combinando tecnología avanzada con atención
           personalizada.
         </p>
 
@@ -19,20 +19,20 @@ export default function WelcomeSection() {
           <FeatureCard
             as="h2"
             icon={<Spa sx={{ fontSize: 32, color: "#f0d4a8" }} />}
-            title="Bienestar Interior"
+            title="Bienestar interior"
             description="Cuidamos el equilibrio entre cuerpo y mente."
           />
           <FeatureCard
             as="h2"
             icon={<Star sx={{ fontSize: 32, color: "#f0d4a8" }} />}
-            title="Tecnología Avanzada"
+            title="Tecnología avanzada"
             description="Equipos de última generación."
           />
           <FeatureCard
             as="h2"
             icon={<Favorite sx={{ fontSize: 32, color: "#f0d4a8" }} />}
             title="Atención personalizada"
-            description="Enfoque personalizado para que te lleves una gran experiencia."
+            description="Un enfoque personalizado pensado para ofrecerte una experiencia única."
           />
         </div>
       </div>
