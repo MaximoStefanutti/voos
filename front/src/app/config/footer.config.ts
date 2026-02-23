@@ -13,10 +13,10 @@ export interface FooterLink {
 }
 
 export const footerServices = [
-  { href: "/tratamientos?category=facial", label: "Tratamientos Faciales" },
-  { href: "/tratamientos?category=corporal", label: "Tratamientos Corporales" },
-  { href: "/tratamientos?category=depilación", label: "Depilación definitiva" },
-  { href: "/tratamientos?category=masajes", label: "Masajes" },
+  { href: "/tratamientos/facial", label: "Tratamientos Faciales" },
+  { href: "/tratamientos/corporal", label: "Tratamientos Corporales" },
+  { href: "/tratamientos/depilacion", label: "Depilación definitiva" },
+  { href: "/tratamientos/masajes", label: "Masajes" },
 ];
 
 export const footerLinks = [

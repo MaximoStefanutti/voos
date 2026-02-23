@@ -17,7 +17,7 @@ export default function ServiceSchema({ name, description, url }: Props) {
     provider: {
       "@type": "LocalBusiness",
       name: "VOOS Estética Integral",
-      url: "https://voosestetica.com.aar",
+      url: "https://voosestetica.com.ar",
     },
     areaServerd: {
       "@type": "AdministativeArea",
