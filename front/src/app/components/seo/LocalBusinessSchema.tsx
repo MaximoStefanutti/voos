@@ -32,7 +32,7 @@ export default function LocalBusinessSchema() {
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeed: "Saturday",
+        dayOfWeek: "Saturday",
         opens: "09:00",
         closes: "20:00",
       },
@@ -56,28 +56,28 @@ export default function LocalBusinessSchema() {
       itemListElement: [
         {
           "@type": "Offer",
-          itemOffer: {
+          itemOffered: {
             "@type": "Service",
             name: "Hifu Facial y Corporal",
           },
         },
         {
           "@type": "Offer",
-          itemOffer: {
+          itemOffered: {
             "@type": "Service",
             name: "Masajes Relajantes",
           },
         },
         {
           "@type": "Offer",
-          itemOffer: {
+          itemOffered: {
             "@type": "Service",
             name: "RadioFrecuencia",
           },
         },
         {
           "@type": "Offer",
-          itemOffer: {
+          itemOffered: {
             "@type": "Service",
             name: "Depilación Definitiva",
           },

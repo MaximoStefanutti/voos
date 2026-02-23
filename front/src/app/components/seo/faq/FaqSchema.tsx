@@ -1,4 +1,4 @@
-import { FaqItem } from "../../../../types/faq/faq";
+import { FaqItem } from "@/types/faq/faq";
 
 interface Props {
   faqs: FaqItem[];
@@ -12,10 +12,10 @@ export default function FaqSchema({ faqs }: Props) {
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
-      name: faq.question,
+      name: faq.question.trim(),
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer,
+        text: faq.answer.trim(),
       },
     })),
   };
@@ -23,7 +23,9 @@ export default function FaqSchema({ faqs }: Props) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+      }}
     />
   );
 }
