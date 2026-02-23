@@ -12,7 +12,7 @@ export default function BreadcrumbSchema({ category }: Props) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemsListElement: [
+    itemListElement: [
       {
         "@type": "ListItem",
         position: 1,

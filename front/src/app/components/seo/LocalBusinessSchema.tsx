@@ -5,15 +5,30 @@ export default function LocalBusinessSchema() {
     "@id": "https://voosestetica.com.ar/#business",
     name: "VOOS Estética Integral",
     url: "https://voosestetica.com.ar",
-    logo: "https://voosestetica.com.ar/logo-blanco.png",
-    image: "https://voosestetica.com.ar/og-image.webp",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://voosestetica.com.ar/logo-blanco.png",
+    },
+    image: {
+      "@type": "ImageObject",
+      url: "https://voosestetica.com.ar/og-image.webp",
+    },
+
     description:
       "Centro de estética en Córdoba Capital especializado en masajes relajantes, HIFU, radiofrecuencia, depilación definitiva y tratamientos faciales y corporales",
-    telephone: "+5493515128427",
+
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+5493515128427",
+      contactType: "customer service",
+      areaServed: "AR",
+      availableLanguage: ["Spanish"],
+    },
+
     address: {
       "@type": "PostalAddress",
       streetAddress: "Barrio Empalme, Chamical 2610",
-      addressLocality: "Córdoba",
+      addressLocality: "Córdoba Capital",
       addressRegion: "Córdoba",
       postalCode: "5000",
       addressCountry: "AR",
