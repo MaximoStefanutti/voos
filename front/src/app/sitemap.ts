@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const categoryRoutes = Object.keys(categoryContent).map((category) => ({
-    url: `${siteConfig.url}/tratamientos${category}`,
+    url: `${siteConfig.url}/tratamientos/${category}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.85,
