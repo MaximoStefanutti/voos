@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${baseUrl}/tratamientos/${category}`,
       siteName: "VOOS Estética",
       locale: "es_AR",
-      type: "website",
+      type: "article",
       images: [
         {
           url: `${baseUrl}${data.heroImage}`,

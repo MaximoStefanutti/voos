@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   },
   description:
     "Centro de estética en Córdoba Capital especializado en masajes relajantes, HIFU, radiofrecuencia, depilación definitiva y tratamientos faciales y corporales. Atención personalizada y tunos por WhatsApp.",
+
+  alternates: {
+    canonical: "https://voosestetica.com.ar/",
+  },
   keywords: [
     "centro de estética en Córdoba",
     "masajes en Córdoba",
@@ -36,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "VOOS Estética Integral",
     title: "Centro de estética en Córdoba Capital | VOOS Estética Integral",
     description:
-      "Masajes, HIFU, radiofrecuencia y tratamientos faciales y corporales en Córdoba Capital. Reeservá tu turno por Whatsapp y viví la experiencia VOOS Estética Integral.",
+      "Masajes, HIFU, radiofrecuencia y tratamientos faciales y corporales en Córdoba Capital. Reservá tu turno por Whatsapp y viví la experiencia VOOS Estética Integral.",
     images: [
       {
         url: "image/logo/og-image.webp",
