@@ -29,26 +29,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const baseUrl = "https://voosestetica.com.ar";
-
   return {
     title: data.seo.title,
     description: data.seo.description,
 
     alternates: {
-      canonical: `${baseUrl}/tratamientos/${category}`,
+      canonical: `/tratamientos/${category}`,
     },
 
     openGraph: {
       title: data.seo.title,
       description: data.seo.description,
-      url: `${baseUrl}/tratamientos/${category}`,
+      url: `/tratamientos/${category}`,
       siteName: "VOOS Estética",
       locale: "es_AR",
       type: "article",
       images: [
         {
-          url: `${baseUrl}${data.heroImage}`,
+          url: `${data.heroImage}`,
           width: 1200,
           height: 630,
           alt: data.seo.title,
@@ -59,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: data.seo.title,
       description: data.seo.description,
-      images: [`${baseUrl}${data.heroImage}`],
+      images: [`${data.heroImage}`],
     },
   };
 }

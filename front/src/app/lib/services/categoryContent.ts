@@ -3,49 +3,50 @@ import { CategoryContent } from "./types";
 export const categoryContent: CategoryContent = {
   corporal: {
     seo: {
-      title: "Tratamientos Corporales en Córdoba Capital | Voos Estética",
+      title:
+        "Tratamientos Corporales en Córdoba Capital | Reducción de Grasa y Modelado Corporal",
       description:
-        "Tratamientos corporales en Córdoba Capital para reducir grasa localizada, mejorar la firmeza y modelar tu figura con tecnolgía avanzada y resultados progesivos.",
+        "Tratamientos corporales en Córdoba Capital para reducir grasa localizada, mejorar la firmeza y modelar tu figura con tecnología avanzada y resultados progresivos.",
     },
 
     heroImage: "/image/tratamientos/vela.webp",
 
     intro:
-      "En VOOS Estética ofrcemos tratamientos corporales en Córdoba diseñados para mejorar la firmeza de la piel, reducir grasa localizada y modelar la silueta de nmanera segura y progresiva. Trabajamos con tecnología estética avanzada y protocolos personalizados según cada necesidad.",
+      "En VOOS Estética ofrecemos tratamientos corporales en Córdoba diseñados para mejorar la firmeza de la piel, reducir grasa localizada y modelar la silueta de manera segura y progresiva. Trabajamos con tecnología estética avanzada y protocolos personalizados según cada necesidad.",
 
     sections: [
       {
-        title: "¿Que son los tratamientos corporales?",
+        title: "¿Qué son los tratamientos corporales?",
         content:
-          "Los tratamientos corporales son procedimientos estéticos no invasivos orientados a mejorar la calidad de la piel y redefinir la silueta. en nuesto centro de estética en Córdoba Capital trabajamos con tecnología de úultima generación que permite estimular el colágeno, mejorar la circulación y favorecer la reducción de adiposidad localizada sin necesidad de cirugía. Cada protocolo se adapta de manera personalizada según las necesidades del paciente, evaluando zonas específicas como abdomen, piernas, glúteos o brazos.",
+          "Los tratamientos corporales son procedimientos estéticos no invasivos orientados a mejorar la calidad de la piel y redefinir la silueta. En nuestro centro de estética en Córdoba Capital trabajamos con tecnología de última generación que permite estimular el colágeno, mejorar la circulación y favorecer la reducción de adiposidad localizada sin necesidad de cirugía. Cada protocolo se adapta de manera personalizada según las necesidades del paciente, evaluando zonas específicas como abdomen, piernas, glúteos o brazos.",
       },
       {
-        title: "¿Para quien están indicados?",
+        title: "¿Para quién están indicados?",
         content:
           "Nuestros tratamientos corporales en Córdoba están indicados para personas que desean mejorar la firmeza de la piel, reducir celulitis o tratar la grasa localizada que no responde a dienta ni ejercicio. Son ideales para quienes buscan resultados naturales, progresivos y seguros. Antes de comenzar cualquier procedimiento realizamos una evaluación personalizada para determinar el protocolo más adecuado, garantizando un enfoque profesional y responsable.",
       },
       {
-        title: "tecnología utilizada en nuestor centro en Córdoba",
+        title: "Tecnología utilizada en nuestro centro en Córdoba",
         content:
-          "En VOOS Estétca trabajamos con tecnologías reconocidas por su eficacia en la remodelación corporal no invasiva. En nuestro centro en Córdoba Capital utilizamos HIFU corporal para estimular la producción profunda de colágeno, Vela terapia para mejorar la textura de la piel y reducir la celulitis, y Liposonix para tratar grasa localizada de manera focalizada y segura. Además, incorporamos botas de presoterapia, un trtamiento complementario que favorece el drenaje linfático, mejora la circulación y ayuda reducir la retención de líquidos. Esta combinación tecnológica permite abordar distintas necesidades corporales de manera integral bajo protocolos personalizados y supervisados por profesionales capacitados. ",
+          "En VOOS Estética trabajamos con tecnologías reconocidas por su eficacia en la remodelación corporal no invasiva. En nuestro centro en Córdoba Capital utilizamos HIFU corporal para estimular la producción profunda de colágeno, Vela terapia para mejorar la textura de la piel y reducir la celulitis, y Liposonix para tratar grasa localizada de manera focalizada y segura. Además, incorporamos botas de presoterapia, un tratamiento complementario que favorece el drenaje linfático, mejora la circulación y ayuda a reducir la retención de líquidos. Esta combinación tecnológica permite abordar distintas necesidades corporales de manera integral bajo protocolos personalizados y supervisados por profesionales capacitados. ",
       },
       {
         title: "Beneficios de los tratamientos corporales",
         content:
-          "Entre los principales beneficios se encuentran la mejora de la firmeza cutánea, la reducción visible de grasa localizada, la disminución de celulitis y el modelado progresivo de la figura. Al tratarse de procedimientos no quirúrgicos, no requieren tiempos de recuperación, permitiendo retomar las actividades habituales rápidamente. Los resutados se observan de forma gradual, favorecniendo una apariencia armónica y natural del cuerpo a lo largo de las sesiones.",
+          "Entre los principales beneficios se encuentran la mejora de la firmeza cutánea, la reducción visible de grasa localizada, la disminución de celulitis y el modelado progresivo de la figura. Al tratarse de procedimientos no quirúrgicos, no requieren tiempos de recuperación, permitiendo retomar las actividades habituales rápidamente. Los resultados se observan de forma gradual, favoreciendo una apariencia armónica y natural del cuerpo a lo largo de las sesiones.",
       },
       {
         title: "¿Por qué elegir VOOS Estética en Córdoba?",
         content:
-          "Elegir un centro de estética en Códoba implica confiar en profesionales capacitados y tecnología certificada. En VOOS Estética priorizamos la tención personalizada, la evaluación previa y el seguimiento de cada paciente. Nuestro objetivo no es solo mejorar la apariencia física, sino acompañar cada proceso con resposabilidad y compromiso profesional, brindamos un espacio seguro y especializado en Córdoba Capital.",
+          "Elegir un centro de estética en Córdoba implica confiar en profesionales capacitados y tecnología certificada. En VOOS Estética priorizamos la atención personalizada, la evaluación previa y el seguimiento de cada paciente. Nuestro objetivo no es solo mejorar la apariencia física, sino acompañar cada proceso con responsabilidad y compromiso profesional. Brindamos un espacio seguro y especializado en Córdoba Capital.",
       },
     ],
     benefits: [
-      "Reducción de grasa localizada",
-      "Mejora de la firmeza de la piel",
+      "Reducción visible de grasa localizada en zonas específicas",
+      "Mejora de la firmeza y tonicidad de la piel",
       "Disminución de celulitis",
       "Procesos no invasivos y seguros",
-      "Resultados progesivos y naturales",
+      "Resultados progresivos y naturales",
     ],
 
     faqs: [
@@ -57,32 +58,33 @@ export const categoryContent: CategoryContent = {
       {
         question: "¿Los tratamientos son dolorosos?",
         answer:
-          "La mayoría de los procedimientos son mínimanete invasivos y bien tolerados. Algunas tecnologías pueden generar una leve sensación de calor o presión, pero se aplican bajo protocolos seguros para garantizar comodidad y seguridad.",
+          "La mayoría de los procedimientos son mínimamente invasivos y bien tolerados. Algunas tecnologías pueden generar una leve sensación de calor o presión, pero se aplican bajo protocolos seguros para garantizar comodidad y seguridad.",
       },
       {
         question: "¿Los resultados son permanentes?",
         answer:
-          "Los resultados pueden mantenerse en el tiempo si se acompañan de hábitos saludables. Nuestros profesionales brindan recomendaciones personalizdas para potenciar y sostener los efectos del tratamiento a largo plazo.",
+          "Los resultados pueden mantenerse en el tiempo si se acompañan de hábitos saludables. Nuestros profesionales brindan recomendaciones personalizadas para potenciar y sostener los efectos del tratamiento a largo plazo.",
       },
     ],
   },
 
   facial: {
     seo: {
-      title: "Tratamientos Faciales en Córdoba | VOOS Estética",
+      title:
+        "Tratamientos Faciales en Córdoba Capital | Limpieza e Hidratación Profesional",
       description:
         "Tratamientos faciales en Córdoba Capital para mejorar la luminosidad, hidratación y firmeza de la piel. Limpieza facial profunda, hidratación, rejuvenecimiento y protocolos personalizados con tecnología profesional.",
     },
     heroImage: "/image/tratamientos/hifu.webp",
 
     intro:
-      "En VOOS Estética ofrecemos tratamientos faciales en Córdoba Capital diseñados para mejorar la salud, textura y luminosidad de la piel, Cada protocolo es personalizado según diagnóstico previo, tipo de piel y objetivos estéticos.",
+      "En VOOS Estética ofrecemos tratamientos faciales en Córdoba Capital diseñados para mejorar la salud, textura y luminosidad de la piel. Cada protocolo es personalizado según diagnóstico previo, tipo de piel y objetivos estéticos.",
 
     sections: [
       {
-        title: "¿Que incluyen nuestros tratamientos faciales?",
+        title: "¿Qué incluyen nuestros tratamientos faciales?",
         content:
-          "Nuestros tratamientos faciales están orientados a mejorar la calidad de la piel desde un enfoque profesional y personalizado. Cada sesión comienza con un diagnóstico cutáneo que nos permite determinar el protocol adecuado según el tipo de piel, edad y necesidades específicas. Trabajamos con limpiezas faciales profundas, hidrataciones intensivas, tratamientos para piel sensible, control de acné y procedimientos orientados a estimular la producción natural de colágeno.",
+          "Nuestros tratamientos faciales están orientados a mejorar la calidad de la piel desde un enfoque profesional y personalizado. Cada sesión comienza con un diagnóstico cutáneo que nos permite determinar el protocolo adecuado según el tipo de piel, edad y necesidades específicas. Trabajamos con limpiezas faciales profundas, hidrataciones intensivas, tratamientos para piel sensible, control de acné y procedimientos orientados a estimular la producción natural de colágeno.",
       },
       {
         title: "Centro especializado en tratamientos faciales en Córdoba",
@@ -97,7 +99,7 @@ export const categoryContent: CategoryContent = {
       {
         title: "Beneficios de los tratamientos faciales",
         content:
-          "Los principales beneficios incluyen la mejora de la firmeza cutánea, reducción visible de grasa localizada, disminución de celulitis y modelado progresivo de la figura. Nuestros tratamientos incluyen protocolos que estimulan la producción natural del colágeno y elastina, ayudando a reducir signos de fatiga y envejecimiento. Estos procedimientos para quienes buscan rejuvenecer la piel sin recurrir a métodos invasivos, logrando resultados progresivos y armónicos.",
+          "Los principales beneficios incluyen la mejora de la luminosidad, hidratación profunda y aumento de la firmeza cutánea. Nuestros protocolos ayudan a estimular la producción natural de colágeno y elastina, favoreciendo una piel más uniforme, revitalizada y saludable. Son procedimientos no invasivos que permiten obtener resultados progresivos y naturales respetando la estructura de la piel.",
       },
       {
         title: "Hidratación y rejuvenecimiento facial",
@@ -112,12 +114,13 @@ export const categoryContent: CategoryContent = {
     ],
 
     benefits: [
-      "Mejora de la luminosidad y textura",
+      "Mejora visible de la luminosidad y textura de la piel",
       "Hidratación profunda y duradera",
-      "Estimulación de colágeno.",
+      "Mejora del tono y firmeza facial",
+      "Estimulación de la producción natural de colágeno",
       "Prevención de imperfecciones y brotes de acné",
-      "Protocolos personalizados.",
-      "Resultados progresivos y naturales",
+      "Protocolos personalizados según tu tipo de piel",
+      "Resultados progresivos y naturales sin procedimientos invasivos",
     ],
 
     faqs: [
@@ -130,7 +133,7 @@ export const categoryContent: CategoryContent = {
         question:
           "¿Los tratamientos faciales son aptos para todo tipo de piel?",
         answer:
-          "Si. Los tratamientos se adaptan según el diagnostico de evaluación previa. Trabajamos con protocolos específicos para piel seca, grasa, mixta, sensible o con tendencia acneica.",
+          "Si, los tratamientos se adaptan según el diagnostico de evaluación previa. Trabajamos con protocolos específicos para piel seca, grasa, mixta, sensible o con tendencia acneica.",
       },
       {
         question: "¿Los tratamientos faciales son dolorosos?",
@@ -154,7 +157,7 @@ export const categoryContent: CategoryContent = {
   masajes: {
     seo: {
       title:
-        "Masajes en Córdoba Capital | Relajantes, Descontracturantes y terapéuticos | VOOS Estética",
+        "Masajes en Córdoba Capital | Relajantes, Descontracturantes Profesionales",
       description:
         "Masajes en Córdoba Capital para aliviar tensiones, reducir el estrés y mejorar el bienestar físico. Masajes relajantes, descontracturantes y terapéuticos en un espacio profesional y cuidado.",
     },
@@ -168,7 +171,7 @@ export const categoryContent: CategoryContent = {
       {
         title: "Centro de masajes en Córdoba Capital",
         content:
-          "Nuestro centro de estética en Córdoba Capital ofrece distintos tipos de masajes adaptados a cada necesidad. Antes de comenzar realizamos una breve evaluación para comprender el motivo de consulta: contracturas, estrés acumulado, sobrecarga muscular o simplemente búsqueda de relajación.\n\nCada sesión esta diseñada para trabajar zonas específicas del cuerpo, utilizando técnicas manuales profesionales que permiten liberar tensiones, mejorar la circulación y favorecer la oxigenación de los tejidos.",
+          "Nuestro centro de estética en Córdoba Capital ofrece distintos tipos de masajes adaptados a cada necesidad. Antes de comenzar realizamos una breve evaluación para comprender el motivo de consulta: contracturas, estrés acumulado, sobrecarga muscular o simplemente búsqueda de relajación.\n\nCada sesión está diseñada para trabajar zonas específicas del cuerpo, utilizando técnicas manuales profesionales que permiten liberar tensiones, mejorar la circulación y favorecer la oxigenación de los tejidos.",
       },
       {
         title: "Masajes relajantes para reducir el estrés",
@@ -178,7 +181,7 @@ export const categoryContent: CategoryContent = {
       {
         title: "Masajes terapéuticos y bienestar integral",
         content:
-          "Además de los masajes relajantes, ofrecemos protocolos terapéuticos que combinan distintas técnicas manuales para abordar molestias específicas como contracturas y sobrecarga muscular. El objetivo no es solo aliviar el síntoma momentáneo, sino favorecer una mejora progresiva en la postura, circulación y movilidad. Cada Sesión se adapta a la evolución de la persona, garantizando un tratamiento personalizado.",
+          "Además de los masajes relajantes, ofrecemos protocolos terapéuticos que combinan distintas técnicas manuales para abordar molestias específicas como contracturas y sobrecarga muscular. El objetivo no es solo aliviar el síntoma momentáneo, sino favorecer una mejora progresiva en la postura, circulación y movilidad. Cada sesión se adapta a la evolución de la persona, garantizando un tratamiento personalizado.",
       },
       {
         title: "Beneficios de los masajes en Córdoba Capital",
@@ -188,7 +191,7 @@ export const categoryContent: CategoryContent = {
       {
         title: "Un espacio preparado para tu bienestar",
         content:
-          "En VOOS Estética trabajamos en un ambiente cuidado, higienizado y preparado para brindar una experiencia confortable. Priorizamos la atención personalizada y la escucha activa para adaptar cada masaje a las necesidades individuales.\n\nNuestro objetivo es que cada persona que nos elige encuentre un momento de desconexión, alivio y bienestar físico real",
+          "En VOOS Estética trabajamos en un ambiente cuidado, higienizado y preparado para brindar una experiencia confortable. Priorizamos la atención personalizada y la escucha activa para adaptar cada masaje a las necesidades individuales.\n\nNuestro objetivo es que cada persona que nos elige encuentre un momento de desconexión, alivio y bienestar físico real.",
       },
     ],
 
@@ -205,7 +208,7 @@ export const categoryContent: CategoryContent = {
       {
         question: "¿Cuánto dura una sesión de masaje?",
         answer:
-          "Las sesiones suelen durar entre 45 y 60 minutos, dependiendo el tipo de masaje y las necesidad específica.",
+          "Las sesiones suelen durar entre 45 y 60 minutos, dependiendo del tipo de masaje y la necesidad específica.",
       },
       {
         question: "¿El masaje descontracturante es doloroso?",
@@ -220,20 +223,19 @@ export const categoryContent: CategoryContent = {
       {
         question: "¿Los masajes ayudan a reducir el estrés?",
         answer:
-          "Si. Los masajes relajantes ayudan a disminuir la activación del sistema nervioso, favoreciendo la relajación profunda y mejorando la calidad del descanso.",
+          "Sí. Los masajes relajantes ayudan a disminuir la activación del sistema nervioso, favoreciendo la relajación profunda y mejorando la calidad del descanso.",
       },
       {
         question: "¿Ofrecen masajes en Córdoba Capital todo el año?",
         answer:
-          "Si. Trabajamos durante todo el año con turnos programados para garantizar una atención personalizada y profesional en cada sesión de masaje.",
+          "Sí. Trabajamos durante todo el año con turnos programados para garantizar una atención personalizada y profesional en cada sesión de masaje.",
       },
     ],
   },
 
   depilacion: {
     seo: {
-      title:
-        "Depilación en Córdoba Capital | Servicio Profesional y Seguro | VOOS Estética",
+      title: "Depilación en Córdoba Capital | Corporal y Facial Profesional",
       description:
         "Servicio de depilación en Córdoba Capital con técnicas profesionales y protocolos estrictos de higiene. Resultados duraderos, atención personalizada y cuidado para todo tipo de piel.",
     },
@@ -247,22 +249,22 @@ export const categoryContent: CategoryContent = {
       {
         title: "Centro de depilación en Córdoba Capital",
         content:
-          "Nuestro centro de estética en Córdoba Capital brinda servicios corporal y facial bajo estrictos protocolos de higiene y seguridad. Antes de cada sesión evaluamos el tipo de piel, nivel de sensibilidad y zona a tratar para adaptar la técnica adecuada. Trabajamos con productos profesionales que minimizan irritaciones y cuidan la barrera cutánea, garantizando un procedimiento seguro y eficaz.",
+          "Nuestro centro de estética en Córdoba Capital brinda servicios de depilación corporal y facial bajo estrictos protocolos de higiene y seguridad. Antes de cada sesión evaluamos el tipo de piel, nivel de sensibilidad y zona a tratar para adaptar la técnica adecuada. Trabajamos con productos profesionales que minimizan irritaciones y cuidan la barrera cutánea, garantizando un procedimiento seguro y eficaz.",
       },
       {
         title: "Depilación corporal profesional",
         content:
-          "La depilación corporal es uno de los servicios más solicitados en Córdoba. Permite eliminar el vello de forma eficiente en distintas zonas del cuerpo como piernas, brazos, axilas y cavado. Aplicamos técnicas que favorecen una extracción adecuada del vello, reduciendo el riesgo de irritación y ayudando a prolongar los resultados. La correcta aplicación del procedimiento contribuye a mantener la piel suave por más tiempo.",
+          "La depilación corporal es uno de los servicios más solicitados en Córdoba Capital. Permite eliminar el vello de forma eficiente en distintas zonas del cuerpo como piernas, brazos, axilas y cavado. Aplicamos técnicas que favorecen una extracción adecuada del vello, reduciendo el riesgo de irritación y ayudando a prolongar los resultados. La correcta aplicación del procedimiento contribuye a mantener la piel suave por más tiempo.",
       },
       {
         title: "Higiene y seguridad como prioridad",
         content:
-          "En nuestro centro en Córdoba Capital seguimos protocolos estrictos de higiene, utilizando materiales descartables y productos adecuados para cada sesión.\n\nLa seguridad del procedimiento es fundamental para evitar infecciones, irritaciones o reacciones adversas. Por eso priorizamos la evaluación previa y la atención personalizada en cada tratamiento",
+          "En nuestro centro en Córdoba Capital seguimos protocolos estrictos de higiene, utilizando materiales descartables y productos adecuados para cada sesión.\n\nLa seguridad del procedimiento es fundamental para evitar infecciones, irritaciones o reacciones adversas. Por eso priorizamos la evaluación previa y la atención personalizada en cada tratamiento.",
       },
       {
-        title: "¿Porque elegir VOOS Estética para tu depilación en Córdoba?",
+        title: "¿Por qué elegir VOOS Estética para tu depilación en Córdoba?",
         content:
-          "Elegir nuestro centro de depilación en Córdoba implica priorizar experiencia, higiene y profesionalismo, En VOOS Estética trabajamos para brindar comodidad durante todo el procedimiento, cuidando la piel antes, durante y después de la sesión.\n\nNuestro objetivo es que cada persona obtenga resultados duraderos con el menor nivel de molestia posible y en un entorno seguro.",
+          "Elegir nuestro centro de depilación en Córdoba implica priorizar experiencia, higiene y profesionalismo. En VOOS Estética trabajamos para brindar comodidad durante todo el procedimiento, cuidando la piel antes, durante y después de la sesión.\n\nNuestro objetivo es que cada persona obtenga resultados duraderos con el menor nivel de molestia posible y en un entorno seguro.",
       },
     ],
 
@@ -284,20 +286,20 @@ export const categoryContent: CategoryContent = {
       {
         question: "¿La depilación profesional reduce el crecimiento del vello?",
         answer:
-          "Con sesiones periódicas el vello puede debilitarse progresivamente, lo que contribuye a un crecimiento mas lento y fino.",
+          "Con sesiones periódicas el vello puede debilitarse progresivamente, lo que contribuye a un crecimiento más lento y fino.",
       },
       {
         question: "¿Es segura la depilación en piel sensible?",
         answer:
-          "Si, siempre que se utilicen productos adecuados y se realice una evaluación previa. Adaptamos la técnica según el tipo de piel para minimizar riesgos de irritación.",
+          "Sí, siempre que se utilicen productos adecuados y se realice una evaluación previa. Adaptamos la técnica según el tipo de piel para minimizar riesgos de irritación.",
       },
       {
         question: "¿Realizan depilación facial en Córdoba Capital?",
         answer:
-          "Si, ofrecemos depilación facial profesional en zonas específicas como bozo, mentón y cejas, utilizando productos adaptados para áreas sensibles.",
+          "Sí, ofrecemos depilación facial profesional en zonas específicas como bozo, mentón y cejas, utilizando productos adaptados para áreas sensibles.",
       },
       {
-        question: "¿Que cuidados debo tener después de la depilación?",
+        question: "¿Qué cuidados debo tener después de la depilación?",
         answer:
           "Se recomienda evitar la exposición solar inmediata, hidratar la piel y no utilizar productos irritantes durante las primeras 24 a 48 horas para favorecer la recuperación de la piel.",
       },
@@ -306,10 +308,9 @@ export const categoryContent: CategoryContent = {
 
   "terapia-energetica": {
     seo: {
-      title:
-        "Terapias Energéticas en Córdoba | Bienestar Integral |VOOS Estética",
+      title: "Terapias Energéticas en Córdoba | Bienestar Integral",
       description:
-        "Sesiones de terapias energéticas en Córdoba Capital orientadas al equilibrio emocional y la relajación profunda. Sesiones completarías en un espacio profesional y cuidado.",
+        "Sesiones de terapias energéticas en Córdoba Capital orientadas al equilibrio emocional y la relajación profunda. Sesiones complementarías en un espacio profesional y cuidado.",
     },
 
     heroImage: "/image/tratamientos/pendulo.webp",
@@ -321,12 +322,12 @@ export const categoryContent: CategoryContent = {
       {
         title: "Espacio de terapias energéticas en Córdoba Capital",
         content:
-          "Nuestro centro en Córdoba Capital ofrece sesiones de terapia energética en un entorno preparado para favorecer la relajación profunda. Cada encuentro comienza con una breve conversación para comprender el momento personal de quien consulta y adaptar la sesión a sus necesidades.\n\nEl objetivo es generar un espacio seguro donde la persona pueda desconectar del ritmo cotidiano y reconectar con us equilibrio interno.",
+          "Nuestro centro en Córdoba Capital ofrece sesiones de terapia energética en un entorno preparado para favorecer la relajación profunda. Cada encuentro comienza con una breve conversación para comprender el momento personal de quien consulta y adaptar la sesión a sus necesidades.\n\nEl objetivo es generar un espacio seguro donde la persona pueda desconectar del ritmo cotidiano y reconectar con su equilibrio interno.",
       },
       {
-        title: "¿Que son las terapias energéticas?",
+        title: "¿Qué son las terapias energéticas?",
         content:
-          "Las terapias energéticas son prácticas complementarias orientadas a armonizar cuerpo y mente a través de técnicas suaves y no invasivas. Se enfocan en promover estados de relajación profunda, claridad mental y bienestar general.\n\nEn Córdoba Capital cada vez mas personas incorporan este tipo de sesiones como parte de su rutina autocuidado.",
+          "Las terapias energéticas son prácticas complementarias orientadas a armonizar cuerpo y mente a través de técnicas suaves y no invasivas. Se enfocan en promover estados de relajación profunda, claridad mental y bienestar general.\n\nEn Córdoba Capital cada vez más personas incorporan este tipo de sesiones como parte de su rutina de autocuidado.",
       },
       {
         title: "Beneficios de las terapias energéticas",
@@ -363,7 +364,7 @@ export const categoryContent: CategoryContent = {
       {
         question: "¿Qué se siente durante una sesión de terapia energética?",
         answer:
-          "La mayoría de las personas experimenta una sensación de relajación profunda y calma. Cada experiencia es individual y única puede variar según el momento personal.",
+          "La mayoría de las personas experimenta una sensación de relajación profunda y calma. Cada experiencia es individual y puede variar según el momento personal.",
       },
       {
         question: "¿Las terapias energéticas reemplazan tratamientos médicos?",
@@ -371,7 +372,7 @@ export const categoryContent: CategoryContent = {
           "No. Las terapias energéticas son prácticas complementarias orientadas al bienestar y no sustituyen tratamientos médicos ni psicológicos.",
       },
       {
-        question: "¿Cuanto dura una sesión?",
+        question: "¿Cuánto dura una sesión?",
         answer:
           "Las sesiones suelen durar entre 45 y 60 minutos, dependiendo del tipo de encuentro y las necesidades individuales.",
       },
@@ -384,7 +385,7 @@ export const categoryContent: CategoryContent = {
         question:
           "¿Ofrecen terapias energéticas en Córdoba Capital todo el año?",
         answer:
-          "Si, trabajamos con turnos programados durante todo el año para brindar atención personalizada en un entorno profesional.",
+          "Sí, trabajamos con turnos programados durante todo el año para brindar atención personalizada en un entorno profesional.",
       },
     ],
   },
