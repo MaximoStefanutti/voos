@@ -15,14 +15,12 @@ export default function ServiceSchema({ name, description, url }: Props) {
     description,
     url,
 
-    mainEntityofPage: {
-      "@type": "WebPage",
+    mainEntityOfPage: {
       "@id": url,
     },
 
     provider: {
-      "@type": "LocalBusiness",
-      url: "https://voosestetica.com.ar/#business",
+      "@id": "https://voosestetica.com.ar/#business",
     },
 
     areaServed: {

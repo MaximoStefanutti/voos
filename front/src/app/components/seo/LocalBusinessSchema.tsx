@@ -19,11 +19,12 @@ export default function LocalBusinessSchema() {
 
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+5493515128427",
       contactType: "customer service",
       areaServed: "AR",
       availableLanguage: ["Spanish"],
     },
+
+    telephone: "+5493515128427",
 
     address: {
       "@type": "PostalAddress",
