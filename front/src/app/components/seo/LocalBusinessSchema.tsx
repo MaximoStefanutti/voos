@@ -27,7 +27,7 @@ export default function LocalBusinessSchema() {
 
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Barrio Empalme, Chamical 2610",
+      streetAddress: "Chamical 2610",
       addressLocality: "Córdoba Capital",
       addressRegion: "Córdoba",
       postalCode: "5000",
@@ -71,30 +71,38 @@ export default function LocalBusinessSchema() {
       itemListElement: [
         {
           "@type": "Offer",
+
           itemOffered: {
-            "@type": "Service",
-            name: "Hifu Facial y Corporal",
+            "@id": "https://voosestetica.com.ar/tratamientos/masajes#service",
+          },
+        },
+        {
+          "@type": "Offer",
+
+          itemOffered: {
+            "@id": "https://voosestetica.com.ar/tratamientos/facial#service",
+          },
+        },
+        {
+          "@type": "Offer",
+
+          itemOffered: {
+            "@id": "https://voosestetica.com.ar/tratamientos/corporal#service",
+          },
+        },
+        {
+          "@type": "Offer",
+
+          itemOffered: {
+            "@id":
+              "https://voosestetica.com.ar/tratamientos/depilacion#service",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
-            "@type": "Service",
-            name: "Masajes Relajantes",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "RadioFrecuencia",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Depilación Definitiva",
+            "@id":
+              "https://voosestetica.com.ar/tratamientos/terapia-energetica#service",
           },
         },
       ],

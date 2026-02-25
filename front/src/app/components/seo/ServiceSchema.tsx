@@ -14,23 +14,37 @@ export default function ServiceSchema({ name, description, url }: Props) {
     name,
     description,
     url,
+
+    mainEntityofPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+
     provider: {
       "@type": "LocalBusiness",
-      name: "VOOS Estética Integral",
-      url: "https://voosestetica.com.ar",
+      url: "https://voosestetica.com.ar/#business",
     },
-    areaServerd: {
-      "@type": "AdministativeArea",
-      name: "Córdoba Cpaital",
+
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: "Córdoba Capital",
     },
-    availlableChannel: {
+
+    availableChannel: {
       "@type": "Place",
-      adddres: {
+      address: {
         "@type": "PostalAddress",
-        adddresLocality: "Córdoba",
+        addressLocality: "Córdoba",
         addressRegion: "Córdoba",
         addressCountry: "AR",
       },
+    },
+
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceCurrency: "ARS",
+      url: url,
     },
   };
 
